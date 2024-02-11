@@ -138,6 +138,8 @@ void Renderer::SetClearColor(const Float4& color)
 void Renderer::Clear()
 {
     glClear(GL_COLOR_BUFFER_BIT);
+    glEnable(GL_BLEND);
+    glBlendFunc(GL_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
 }
 
 void Renderer::DrawQuad(const Float3& position, const Float2& scale, const Float4& color)

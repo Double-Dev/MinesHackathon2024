@@ -15,6 +15,9 @@ ParticleSystem::ParticleSystem(const uint maxParticles, float spawnRadius)
 
     m_MinSize = 0.001f;
     m_MaxSize = 0.005f;
+
+    m_StartCol = Float4(0.55, 0.02, 0.02f, 1.0f);
+    m_EndCol = Float4(1.0, 0.78, 0.13f, 1.0f);
 }
 
 ParticleSystem::~ParticleSystem()
@@ -46,16 +49,18 @@ void ParticleSystem::Update(float delta)
                 glm::linearRand<float>(0.01f, 0.05f),
                 { accMag * glm::cos(theta), accMag * glm::sin(theta), 0.0f },
                 glm::linearRand<float>(0.01f, 0.5f),
-                { glm::linearRand<float>(0.0f, 1.0f), glm::linearRand<float>(0.0f, 1.0f), glm::linearRand<float>(0.0f, 1.0f), 1.0f },
+                m_StartCol,
             };
         }
         else
         {
             // particle.Vel += particle.RAcc * delta;
             // particle.Vel += Float3{ 0.0, -0.98f, 0.0f } * delta;
+            
             particle.RVel += particle.RAcc * delta;
             particle.Position += particle.Vel * delta;
             particle.Rotation += particle.RVel * delta;
+            particle.Color = m_StartCol + ((m_EndCol - m_StartCol) * (particle.Age / particle.LifeSpan));
         }
     }
 }
@@ -72,7 +77,7 @@ void ParticleSystem::Render(Renderer* renderer)
 void ParticleSystem::ImGuiRender()
 {
     ImGui::SetNextWindowPos(ImVec2(0.0f, 0.0f));
-    ImGui::SetNextWindowSize(ImVec2(175.0f, 275.0f));
+    ImGui::SetNextWindowSize(ImVec2(175.0f, 325.0f));
     ImGui::Begin("Particle Settings", 0, ImGuiWindowFlags_NoResize);
 
     // ImGui::SliderFloat2("Position", &m_Position[0], -1.0f, 1.0f);
@@ -97,6 +102,12 @@ void ParticleSystem::ImGuiRender()
     ImGui::Text("Particle Size:");
     ImGui::SliderFloat("Min", &m_MinSize, 0.0001, m_MaxSize);
     ImGui::SliderFloat("Max", &m_MaxSize, m_MinSize, 0.1f);
+    ImGui::PopID();
+
+    ImGui::PushID("Color");
+    ImGui::Text("Color:");
+    ImGui::ColorEdit3("Start", &m_StartCol[0]);
+    ImGui::ColorEdit3("End", &m_EndCol[0]);
     ImGui::PopID();
 
     ImGui::End();

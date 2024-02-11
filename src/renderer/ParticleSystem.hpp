@@ -47,4 +47,7 @@ private:
 
     float m_MinSize;
     float m_MaxSize;
+
+    Float4 m_StartCol;
+    Float4 m_EndCol;
 };
