@@ -7,6 +7,12 @@
 },
 {
   "directory": "/home/double-dev/Projects/Hackathon/build",
+  "command": "/opt/cuda/bin/g++ -I/home/double-dev/Projects/Hackathon/src -isystem /home/double-dev/Projects/Hackathon/vendor/glad/include -isystem /home/double-dev/Projects/Hackathon/vendor/glfw/include -isystem /home/double-dev/Projects/Hackathon/vendor/glm -isystem /home/double-dev/Projects/Hackathon/vendor/imgui -isystem /home/double-dev/Projects/Hackathon/vendor/stb -g -std=gnu++17 -o CMakeFiles/ParticleDemo.dir/src/renderer/ParticleSystem.cpp.o -c /home/double-dev/Projects/Hackathon/src/renderer/ParticleSystem.cpp",
+  "file": "/home/double-dev/Projects/Hackathon/src/renderer/ParticleSystem.cpp",
+  "output": "CMakeFiles/ParticleDemo.dir/src/renderer/ParticleSystem.cpp.o"
+},
+{
+  "directory": "/home/double-dev/Projects/Hackathon/build",
   "command": "/opt/cuda/bin/g++ -I/home/double-dev/Projects/Hackathon/src -isystem /home/double-dev/Projects/Hackathon/vendor/glad/include -isystem /home/double-dev/Projects/Hackathon/vendor/glfw/include -isystem /home/double-dev/Projects/Hackathon/vendor/glm -isystem /home/double-dev/Projects/Hackathon/vendor/imgui -isystem /home/double-dev/Projects/Hackathon/vendor/stb -g -std=gnu++17 -o CMakeFiles/ParticleDemo.dir/src/renderer/Renderer.cpp.o -c /home/double-dev/Projects/Hackathon/src/renderer/Renderer.cpp",
   "file": "/home/double-dev/Projects/Hackathon/src/renderer/Renderer.cpp",
   "output": "CMakeFiles/ParticleDemo.dir/src/renderer/Renderer.cpp.o"

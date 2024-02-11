@@ -55,6 +55,17 @@ build CMakeFiles/ParticleDemo.dir/src/main.cpp.o: CXX_COMPILER__ParticleDemo_uns
   INCLUDES = -I/home/double-dev/Projects/Hackathon/src -isystem /home/double-dev/Projects/Hackathon/vendor/glad/include -isystem /home/double-dev/Projects/Hackathon/vendor/glfw/include -isystem /home/double-dev/Projects/Hackathon/vendor/glm -isystem /home/double-dev/Projects/Hackathon/vendor/imgui -isystem /home/double-dev/Projects/Hackathon/vendor/stb
   OBJECT_DIR = CMakeFiles/ParticleDemo.dir
   OBJECT_FILE_DIR = CMakeFiles/ParticleDemo.dir/src
+  TARGET_COMPILE_PDB = CMakeFiles/ParticleDemo.dir/
+  TARGET_PDB = ParticleDemo.pdb
+
+build CMakeFiles/ParticleDemo.dir/src/renderer/ParticleSystem.cpp.o: CXX_COMPILER__ParticleDemo_unscanned_Debug /home/double-dev/Projects/Hackathon/src/renderer/ParticleSystem.cpp || cmake_object_order_depends_target_ParticleDemo
+  DEP_FILE = CMakeFiles/ParticleDemo.dir/src/renderer/ParticleSystem.cpp.o.d
+  FLAGS = -g -std=gnu++17
+  INCLUDES = -I/home/double-dev/Projects/Hackathon/src -isystem /home/double-dev/Projects/Hackathon/vendor/glad/include -isystem /home/double-dev/Projects/Hackathon/vendor/glfw/include -isystem /home/double-dev/Projects/Hackathon/vendor/glm -isystem /home/double-dev/Projects/Hackathon/vendor/imgui -isystem /home/double-dev/Projects/Hackathon/vendor/stb
+  OBJECT_DIR = CMakeFiles/ParticleDemo.dir
+  OBJECT_FILE_DIR = CMakeFiles/ParticleDemo.dir/src/renderer
+  TARGET_COMPILE_PDB = CMakeFiles/ParticleDemo.dir/
+  TARGET_PDB = ParticleDemo.pdb
 
 build CMakeFiles/ParticleDemo.dir/src/renderer/Renderer.cpp.o: CXX_COMPILER__ParticleDemo_unscanned_Debug /home/double-dev/Projects/Hackathon/src/renderer/Renderer.cpp || cmake_object_order_depends_target_ParticleDemo
   DEP_FILE = CMakeFiles/ParticleDemo.dir/src/renderer/Renderer.cpp.o.d
@@ -62,6 +73,8 @@ build CMakeFiles/ParticleDemo.dir/src/renderer/Renderer.cpp.o: CXX_COMPILER__Par
   INCLUDES = -I/home/double-dev/Projects/Hackathon/src -isystem /home/double-dev/Projects/Hackathon/vendor/glad/include -isystem /home/double-dev/Projects/Hackathon/vendor/glfw/include -isystem /home/double-dev/Projects/Hackathon/vendor/glm -isystem /home/double-dev/Projects/Hackathon/vendor/imgui -isystem /home/double-dev/Projects/Hackathon/vendor/stb
   OBJECT_DIR = CMakeFiles/ParticleDemo.dir
   OBJECT_FILE_DIR = CMakeFiles/ParticleDemo.dir/src/renderer
+  TARGET_COMPILE_PDB = CMakeFiles/ParticleDemo.dir/
+  TARGET_PDB = ParticleDemo.pdb
 
 build CMakeFiles/ParticleDemo.dir/src/window/Window.cpp.o: CXX_COMPILER__ParticleDemo_unscanned_Debug /home/double-dev/Projects/Hackathon/src/window/Window.cpp || cmake_object_order_depends_target_ParticleDemo
   DEP_FILE = CMakeFiles/ParticleDemo.dir/src/window/Window.cpp.o.d
@@ -69,6 +82,8 @@ build CMakeFiles/ParticleDemo.dir/src/window/Window.cpp.o: CXX_COMPILER__Particl
   INCLUDES = -I/home/double-dev/Projects/Hackathon/src -isystem /home/double-dev/Projects/Hackathon/vendor/glad/include -isystem /home/double-dev/Projects/Hackathon/vendor/glfw/include -isystem /home/double-dev/Projects/Hackathon/vendor/glm -isystem /home/double-dev/Projects/Hackathon/vendor/imgui -isystem /home/double-dev/Projects/Hackathon/vendor/stb
   OBJECT_DIR = CMakeFiles/ParticleDemo.dir
   OBJECT_FILE_DIR = CMakeFiles/ParticleDemo.dir/src/window
+  TARGET_COMPILE_PDB = CMakeFiles/ParticleDemo.dir/
+  TARGET_PDB = ParticleDemo.pdb
 
 
 # =============================================================================
@@ -78,14 +93,15 @@ build CMakeFiles/ParticleDemo.dir/src/window/Window.cpp.o: CXX_COMPILER__Particl
 #############################################
 # Link the executable ParticleDemo
 
-build ParticleDemo: CXX_EXECUTABLE_LINKER__ParticleDemo_Debug CMakeFiles/ParticleDemo.dir/src/main.cpp.o CMakeFiles/ParticleDemo.dir/src/renderer/Renderer.cpp.o CMakeFiles/ParticleDemo.dir/src/window/Window.cpp.o | vendor/glfw/src/libglfw3.a vendor/glad/libglad.a vendor/imgui/libimgui.a /usr/lib/librt.a /usr/lib/libm.so /usr/lib/libX11.so || vendor/glad/libglad.a vendor/glfw/src/libglfw3.a vendor/imgui/libimgui.a
+build ParticleDemo: CXX_EXECUTABLE_LINKER__ParticleDemo_Debug CMakeFiles/ParticleDemo.dir/src/main.cpp.o CMakeFiles/ParticleDemo.dir/src/renderer/ParticleSystem.cpp.o CMakeFiles/ParticleDemo.dir/src/renderer/Renderer.cpp.o CMakeFiles/ParticleDemo.dir/src/window/Window.cpp.o | vendor/glfw/src/libglfw3.a vendor/glad/libglad.a vendor/imgui/libimgui.a /usr/lib/librt.a /usr/lib/libm.so /usr/lib/libX11.so || vendor/glad/libglad.a vendor/glfw/src/libglfw3.a vendor/imgui/libimgui.a
   FLAGS = -g
   LINK_LIBRARIES = vendor/glfw/src/libglfw3.a  vendor/glad/libglad.a  vendor/imgui/libimgui.a  /usr/lib/librt.a  -lm  -ldl  /usr/lib/libX11.so
   OBJECT_DIR = CMakeFiles/ParticleDemo.dir
   POST_BUILD = :
   PRE_LINK = :
+  TARGET_COMPILE_PDB = CMakeFiles/ParticleDemo.dir/
   TARGET_FILE = ParticleDemo
-  TARGET_PDB = ParticleDemo.dbg
+  TARGET_PDB = ParticleDemo.pdb
 
 
 #############################################
@@ -264,6 +280,8 @@ build vendor/glfw/src/CMakeFiles/glfw.dir/context.c.o: C_COMPILER__glfw_unscanne
   INCLUDES = -I/home/double-dev/Projects/Hackathon/vendor/glfw/include -I/home/double-dev/Projects/Hackathon/vendor/glfw/src -I/home/double-dev/Projects/Hackathon/build/vendor/glfw/src
   OBJECT_DIR = vendor/glfw/src/CMakeFiles/glfw.dir
   OBJECT_FILE_DIR = vendor/glfw/src/CMakeFiles/glfw.dir
+  TARGET_COMPILE_PDB = vendor/glfw/src/CMakeFiles/glfw.dir/glfw.pdb
+  TARGET_PDB = vendor/glfw/src/libglfw3.pdb
 
 build vendor/glfw/src/CMakeFiles/glfw.dir/init.c.o: C_COMPILER__glfw_unscanned_Debug /home/double-dev/Projects/Hackathon/vendor/glfw/src/init.c || cmake_object_order_depends_target_glfw
   DEFINES = -D_GLFW_USE_CONFIG_H
@@ -272,6 +290,8 @@ build vendor/glfw/src/CMakeFiles/glfw.dir/init.c.o: C_COMPILER__glfw_unscanned_D
   INCLUDES = -I/home/double-dev/Projects/Hackathon/vendor/glfw/include -I/home/double-dev/Projects/Hackathon/vendor/glfw/src -I/home/double-dev/Projects/Hackathon/build/vendor/glfw/src
   OBJECT_DIR = vendor/glfw/src/CMakeFiles/glfw.dir
   OBJECT_FILE_DIR = vendor/glfw/src/CMakeFiles/glfw.dir
+  TARGET_COMPILE_PDB = vendor/glfw/src/CMakeFiles/glfw.dir/glfw.pdb
+  TARGET_PDB = vendor/glfw/src/libglfw3.pdb
 
 build vendor/glfw/src/CMakeFiles/glfw.dir/input.c.o: C_COMPILER__glfw_unscanned_Debug /home/double-dev/Projects/Hackathon/vendor/glfw/src/input.c || cmake_object_order_depends_target_glfw
   DEFINES = -D_GLFW_USE_CONFIG_H
@@ -280,6 +300,8 @@ build vendor/glfw/src/CMakeFiles/glfw.dir/input.c.o: C_COMPILER__glfw_unscanned_
   INCLUDES = -I/home/double-dev/Projects/Hackathon/vendor/glfw/include -I/home/double-dev/Projects/Hackathon/vendor/glfw/src -I/home/double-dev/Projects/Hackathon/build/vendor/glfw/src
   OBJECT_DIR = vendor/glfw/src/CMakeFiles/glfw.dir
   OBJECT_FILE_DIR = vendor/glfw/src/CMakeFiles/glfw.dir
+  TARGET_COMPILE_PDB = vendor/glfw/src/CMakeFiles/glfw.dir/glfw.pdb
+  TARGET_PDB = vendor/glfw/src/libglfw3.pdb
 
 build vendor/glfw/src/CMakeFiles/glfw.dir/monitor.c.o: C_COMPILER__glfw_unscanned_Debug /home/double-dev/Projects/Hackathon/vendor/glfw/src/monitor.c || cmake_object_order_depends_target_glfw
   DEFINES = -D_GLFW_USE_CONFIG_H
@@ -288,6 +310,8 @@ build vendor/glfw/src/CMakeFiles/glfw.dir/monitor.c.o: C_COMPILER__glfw_unscanne
   INCLUDES = -I/home/double-dev/Projects/Hackathon/vendor/glfw/include -I/home/double-dev/Projects/Hackathon/vendor/glfw/src -I/home/double-dev/Projects/Hackathon/build/vendor/glfw/src
   OBJECT_DIR = vendor/glfw/src/CMakeFiles/glfw.dir
   OBJECT_FILE_DIR = vendor/glfw/src/CMakeFiles/glfw.dir
+  TARGET_COMPILE_PDB = vendor/glfw/src/CMakeFiles/glfw.dir/glfw.pdb
+  TARGET_PDB = vendor/glfw/src/libglfw3.pdb
 
 build vendor/glfw/src/CMakeFiles/glfw.dir/vulkan.c.o: C_COMPILER__glfw_unscanned_Debug /home/double-dev/Projects/Hackathon/vendor/glfw/src/vulkan.c || cmake_object_order_depends_target_glfw
   DEFINES = -D_GLFW_USE_CONFIG_H
@@ -296,6 +320,8 @@ build vendor/glfw/src/CMakeFiles/glfw.dir/vulkan.c.o: C_COMPILER__glfw_unscanned
   INCLUDES = -I/home/double-dev/Projects/Hackathon/vendor/glfw/include -I/home/double-dev/Projects/Hackathon/vendor/glfw/src -I/home/double-dev/Projects/Hackathon/build/vendor/glfw/src
   OBJECT_DIR = vendor/glfw/src/CMakeFiles/glfw.dir
   OBJECT_FILE_DIR = vendor/glfw/src/CMakeFiles/glfw.dir
+  TARGET_COMPILE_PDB = vendor/glfw/src/CMakeFiles/glfw.dir/glfw.pdb
+  TARGET_PDB = vendor/glfw/src/libglfw3.pdb
 
 build vendor/glfw/src/CMakeFiles/glfw.dir/window.c.o: C_COMPILER__glfw_unscanned_Debug /home/double-dev/Projects/Hackathon/vendor/glfw/src/window.c || cmake_object_order_depends_target_glfw
   DEFINES = -D_GLFW_USE_CONFIG_H
@@ -304,6 +330,8 @@ build vendor/glfw/src/CMakeFiles/glfw.dir/window.c.o: C_COMPILER__glfw_unscanned
   INCLUDES = -I/home/double-dev/Projects/Hackathon/vendor/glfw/include -I/home/double-dev/Projects/Hackathon/vendor/glfw/src -I/home/double-dev/Projects/Hackathon/build/vendor/glfw/src
   OBJECT_DIR = vendor/glfw/src/CMakeFiles/glfw.dir
   OBJECT_FILE_DIR = vendor/glfw/src/CMakeFiles/glfw.dir
+  TARGET_COMPILE_PDB = vendor/glfw/src/CMakeFiles/glfw.dir/glfw.pdb
+  TARGET_PDB = vendor/glfw/src/libglfw3.pdb
 
 build vendor/glfw/src/CMakeFiles/glfw.dir/x11_init.c.o: C_COMPILER__glfw_unscanned_Debug /home/double-dev/Projects/Hackathon/vendor/glfw/src/x11_init.c || cmake_object_order_depends_target_glfw
   DEFINES = -D_GLFW_USE_CONFIG_H
@@ -312,6 +340,8 @@ build vendor/glfw/src/CMakeFiles/glfw.dir/x11_init.c.o: C_COMPILER__glfw_unscann
   INCLUDES = -I/home/double-dev/Projects/Hackathon/vendor/glfw/include -I/home/double-dev/Projects/Hackathon/vendor/glfw/src -I/home/double-dev/Projects/Hackathon/build/vendor/glfw/src
   OBJECT_DIR = vendor/glfw/src/CMakeFiles/glfw.dir
   OBJECT_FILE_DIR = vendor/glfw/src/CMakeFiles/glfw.dir
+  TARGET_COMPILE_PDB = vendor/glfw/src/CMakeFiles/glfw.dir/glfw.pdb
+  TARGET_PDB = vendor/glfw/src/libglfw3.pdb
 
 build vendor/glfw/src/CMakeFiles/glfw.dir/x11_monitor.c.o: C_COMPILER__glfw_unscanned_Debug /home/double-dev/Projects/Hackathon/vendor/glfw/src/x11_monitor.c || cmake_object_order_depends_target_glfw
   DEFINES = -D_GLFW_USE_CONFIG_H
@@ -320,6 +350,8 @@ build vendor/glfw/src/CMakeFiles/glfw.dir/x11_monitor.c.o: C_COMPILER__glfw_unsc
   INCLUDES = -I/home/double-dev/Projects/Hackathon/vendor/glfw/include -I/home/double-dev/Projects/Hackathon/vendor/glfw/src -I/home/double-dev/Projects/Hackathon/build/vendor/glfw/src
   OBJECT_DIR = vendor/glfw/src/CMakeFiles/glfw.dir
   OBJECT_FILE_DIR = vendor/glfw/src/CMakeFiles/glfw.dir
+  TARGET_COMPILE_PDB = vendor/glfw/src/CMakeFiles/glfw.dir/glfw.pdb
+  TARGET_PDB = vendor/glfw/src/libglfw3.pdb
 
 build vendor/glfw/src/CMakeFiles/glfw.dir/x11_window.c.o: C_COMPILER__glfw_unscanned_Debug /home/double-dev/Projects/Hackathon/vendor/glfw/src/x11_window.c || cmake_object_order_depends_target_glfw
   DEFINES = -D_GLFW_USE_CONFIG_H
@@ -328,6 +360,8 @@ build vendor/glfw/src/CMakeFiles/glfw.dir/x11_window.c.o: C_COMPILER__glfw_unsca
   INCLUDES = -I/home/double-dev/Projects/Hackathon/vendor/glfw/include -I/home/double-dev/Projects/Hackathon/vendor/glfw/src -I/home/double-dev/Projects/Hackathon/build/vendor/glfw/src
   OBJECT_DIR = vendor/glfw/src/CMakeFiles/glfw.dir
   OBJECT_FILE_DIR = vendor/glfw/src/CMakeFiles/glfw.dir
+  TARGET_COMPILE_PDB = vendor/glfw/src/CMakeFiles/glfw.dir/glfw.pdb
+  TARGET_PDB = vendor/glfw/src/libglfw3.pdb
 
 build vendor/glfw/src/CMakeFiles/glfw.dir/xkb_unicode.c.o: C_COMPILER__glfw_unscanned_Debug /home/double-dev/Projects/Hackathon/vendor/glfw/src/xkb_unicode.c || cmake_object_order_depends_target_glfw
   DEFINES = -D_GLFW_USE_CONFIG_H
@@ -336,6 +370,8 @@ build vendor/glfw/src/CMakeFiles/glfw.dir/xkb_unicode.c.o: C_COMPILER__glfw_unsc
   INCLUDES = -I/home/double-dev/Projects/Hackathon/vendor/glfw/include -I/home/double-dev/Projects/Hackathon/vendor/glfw/src -I/home/double-dev/Projects/Hackathon/build/vendor/glfw/src
   OBJECT_DIR = vendor/glfw/src/CMakeFiles/glfw.dir
   OBJECT_FILE_DIR = vendor/glfw/src/CMakeFiles/glfw.dir
+  TARGET_COMPILE_PDB = vendor/glfw/src/CMakeFiles/glfw.dir/glfw.pdb
+  TARGET_PDB = vendor/glfw/src/libglfw3.pdb
 
 build vendor/glfw/src/CMakeFiles/glfw.dir/posix_time.c.o: C_COMPILER__glfw_unscanned_Debug /home/double-dev/Projects/Hackathon/vendor/glfw/src/posix_time.c || cmake_object_order_depends_target_glfw
   DEFINES = -D_GLFW_USE_CONFIG_H
@@ -344,6 +380,8 @@ build vendor/glfw/src/CMakeFiles/glfw.dir/posix_time.c.o: C_COMPILER__glfw_unsca
   INCLUDES = -I/home/double-dev/Projects/Hackathon/vendor/glfw/include -I/home/double-dev/Projects/Hackathon/vendor/glfw/src -I/home/double-dev/Projects/Hackathon/build/vendor/glfw/src
   OBJECT_DIR = vendor/glfw/src/CMakeFiles/glfw.dir
   OBJECT_FILE_DIR = vendor/glfw/src/CMakeFiles/glfw.dir
+  TARGET_COMPILE_PDB = vendor/glfw/src/CMakeFiles/glfw.dir/glfw.pdb
+  TARGET_PDB = vendor/glfw/src/libglfw3.pdb
 
 build vendor/glfw/src/CMakeFiles/glfw.dir/posix_thread.c.o: C_COMPILER__glfw_unscanned_Debug /home/double-dev/Projects/Hackathon/vendor/glfw/src/posix_thread.c || cmake_object_order_depends_target_glfw
   DEFINES = -D_GLFW_USE_CONFIG_H
@@ -352,6 +390,8 @@ build vendor/glfw/src/CMakeFiles/glfw.dir/posix_thread.c.o: C_COMPILER__glfw_uns
   INCLUDES = -I/home/double-dev/Projects/Hackathon/vendor/glfw/include -I/home/double-dev/Projects/Hackathon/vendor/glfw/src -I/home/double-dev/Projects/Hackathon/build/vendor/glfw/src
   OBJECT_DIR = vendor/glfw/src/CMakeFiles/glfw.dir
   OBJECT_FILE_DIR = vendor/glfw/src/CMakeFiles/glfw.dir
+  TARGET_COMPILE_PDB = vendor/glfw/src/CMakeFiles/glfw.dir/glfw.pdb
+  TARGET_PDB = vendor/glfw/src/libglfw3.pdb
 
 build vendor/glfw/src/CMakeFiles/glfw.dir/glx_context.c.o: C_COMPILER__glfw_unscanned_Debug /home/double-dev/Projects/Hackathon/vendor/glfw/src/glx_context.c || cmake_object_order_depends_target_glfw
   DEFINES = -D_GLFW_USE_CONFIG_H
@@ -360,6 +400,8 @@ build vendor/glfw/src/CMakeFiles/glfw.dir/glx_context.c.o: C_COMPILER__glfw_unsc
   INCLUDES = -I/home/double-dev/Projects/Hackathon/vendor/glfw/include -I/home/double-dev/Projects/Hackathon/vendor/glfw/src -I/home/double-dev/Projects/Hackathon/build/vendor/glfw/src
   OBJECT_DIR = vendor/glfw/src/CMakeFiles/glfw.dir
   OBJECT_FILE_DIR = vendor/glfw/src/CMakeFiles/glfw.dir
+  TARGET_COMPILE_PDB = vendor/glfw/src/CMakeFiles/glfw.dir/glfw.pdb
+  TARGET_PDB = vendor/glfw/src/libglfw3.pdb
 
 build vendor/glfw/src/CMakeFiles/glfw.dir/egl_context.c.o: C_COMPILER__glfw_unscanned_Debug /home/double-dev/Projects/Hackathon/vendor/glfw/src/egl_context.c || cmake_object_order_depends_target_glfw
   DEFINES = -D_GLFW_USE_CONFIG_H
@@ -368,6 +410,8 @@ build vendor/glfw/src/CMakeFiles/glfw.dir/egl_context.c.o: C_COMPILER__glfw_unsc
   INCLUDES = -I/home/double-dev/Projects/Hackathon/vendor/glfw/include -I/home/double-dev/Projects/Hackathon/vendor/glfw/src -I/home/double-dev/Projects/Hackathon/build/vendor/glfw/src
   OBJECT_DIR = vendor/glfw/src/CMakeFiles/glfw.dir
   OBJECT_FILE_DIR = vendor/glfw/src/CMakeFiles/glfw.dir
+  TARGET_COMPILE_PDB = vendor/glfw/src/CMakeFiles/glfw.dir/glfw.pdb
+  TARGET_PDB = vendor/glfw/src/libglfw3.pdb
 
 build vendor/glfw/src/CMakeFiles/glfw.dir/osmesa_context.c.o: C_COMPILER__glfw_unscanned_Debug /home/double-dev/Projects/Hackathon/vendor/glfw/src/osmesa_context.c || cmake_object_order_depends_target_glfw
   DEFINES = -D_GLFW_USE_CONFIG_H
@@ -376,6 +420,8 @@ build vendor/glfw/src/CMakeFiles/glfw.dir/osmesa_context.c.o: C_COMPILER__glfw_u
   INCLUDES = -I/home/double-dev/Projects/Hackathon/vendor/glfw/include -I/home/double-dev/Projects/Hackathon/vendor/glfw/src -I/home/double-dev/Projects/Hackathon/build/vendor/glfw/src
   OBJECT_DIR = vendor/glfw/src/CMakeFiles/glfw.dir
   OBJECT_FILE_DIR = vendor/glfw/src/CMakeFiles/glfw.dir
+  TARGET_COMPILE_PDB = vendor/glfw/src/CMakeFiles/glfw.dir/glfw.pdb
+  TARGET_PDB = vendor/glfw/src/libglfw3.pdb
 
 build vendor/glfw/src/CMakeFiles/glfw.dir/linux_joystick.c.o: C_COMPILER__glfw_unscanned_Debug /home/double-dev/Projects/Hackathon/vendor/glfw/src/linux_joystick.c || cmake_object_order_depends_target_glfw
   DEFINES = -D_GLFW_USE_CONFIG_H
@@ -384,6 +430,8 @@ build vendor/glfw/src/CMakeFiles/glfw.dir/linux_joystick.c.o: C_COMPILER__glfw_u
   INCLUDES = -I/home/double-dev/Projects/Hackathon/vendor/glfw/include -I/home/double-dev/Projects/Hackathon/vendor/glfw/src -I/home/double-dev/Projects/Hackathon/build/vendor/glfw/src
   OBJECT_DIR = vendor/glfw/src/CMakeFiles/glfw.dir
   OBJECT_FILE_DIR = vendor/glfw/src/CMakeFiles/glfw.dir
+  TARGET_COMPILE_PDB = vendor/glfw/src/CMakeFiles/glfw.dir/glfw.pdb
+  TARGET_PDB = vendor/glfw/src/libglfw3.pdb
 
 
 # =============================================================================
@@ -398,8 +446,9 @@ build vendor/glfw/src/libglfw3.a: C_STATIC_LIBRARY_LINKER__glfw_Debug vendor/glf
   OBJECT_DIR = vendor/glfw/src/CMakeFiles/glfw.dir
   POST_BUILD = :
   PRE_LINK = :
+  TARGET_COMPILE_PDB = vendor/glfw/src/CMakeFiles/glfw.dir/glfw.pdb
   TARGET_FILE = vendor/glfw/src/libglfw3.a
-  TARGET_PDB = glfw3.a.dbg
+  TARGET_PDB = vendor/glfw/src/libglfw3.pdb
 
 
 #############################################
@@ -495,6 +544,8 @@ build vendor/glfw/examples/CMakeFiles/boing.dir/boing.c.o: C_COMPILER__boing_uns
   INCLUDES = -I/home/double-dev/Projects/Hackathon/vendor/glfw/deps -I/home/double-dev/Projects/Hackathon/vendor/glfw/include
   OBJECT_DIR = vendor/glfw/examples/CMakeFiles/boing.dir
   OBJECT_FILE_DIR = vendor/glfw/examples/CMakeFiles/boing.dir
+  TARGET_COMPILE_PDB = vendor/glfw/examples/CMakeFiles/boing.dir/
+  TARGET_PDB = vendor/glfw/examples/boing.pdb
 
 build vendor/glfw/examples/CMakeFiles/boing.dir/__/deps/glad_gl.c.o: C_COMPILER__boing_unscanned_Debug /home/double-dev/Projects/Hackathon/vendor/glfw/deps/glad_gl.c || cmake_object_order_depends_target_boing
   DEP_FILE = vendor/glfw/examples/CMakeFiles/boing.dir/__/deps/glad_gl.c.o.d
@@ -502,6 +553,8 @@ build vendor/glfw/examples/CMakeFiles/boing.dir/__/deps/glad_gl.c.o: C_COMPILER_
   INCLUDES = -I/home/double-dev/Projects/Hackathon/vendor/glfw/deps -I/home/double-dev/Projects/Hackathon/vendor/glfw/include
   OBJECT_DIR = vendor/glfw/examples/CMakeFiles/boing.dir
   OBJECT_FILE_DIR = vendor/glfw/examples/CMakeFiles/boing.dir/__/deps
+  TARGET_COMPILE_PDB = vendor/glfw/examples/CMakeFiles/boing.dir/
+  TARGET_PDB = vendor/glfw/examples/boing.pdb
 
 
 # =============================================================================
@@ -517,8 +570,9 @@ build vendor/glfw/examples/boing: C_EXECUTABLE_LINKER__boing_Debug vendor/glfw/e
   OBJECT_DIR = vendor/glfw/examples/CMakeFiles/boing.dir
   POST_BUILD = :
   PRE_LINK = :
+  TARGET_COMPILE_PDB = vendor/glfw/examples/CMakeFiles/boing.dir/
   TARGET_FILE = vendor/glfw/examples/boing
-  TARGET_PDB = boing.dbg
+  TARGET_PDB = vendor/glfw/examples/boing.pdb
 
 # =============================================================================
 # Object build statements for EXECUTABLE target gears
@@ -535,6 +589,8 @@ build vendor/glfw/examples/CMakeFiles/gears.dir/gears.c.o: C_COMPILER__gears_uns
   INCLUDES = -I/home/double-dev/Projects/Hackathon/vendor/glfw/deps -I/home/double-dev/Projects/Hackathon/vendor/glfw/include
   OBJECT_DIR = vendor/glfw/examples/CMakeFiles/gears.dir
   OBJECT_FILE_DIR = vendor/glfw/examples/CMakeFiles/gears.dir
+  TARGET_COMPILE_PDB = vendor/glfw/examples/CMakeFiles/gears.dir/
+  TARGET_PDB = vendor/glfw/examples/gears.pdb
 
 build vendor/glfw/examples/CMakeFiles/gears.dir/__/deps/glad_gl.c.o: C_COMPILER__gears_unscanned_Debug /home/double-dev/Projects/Hackathon/vendor/glfw/deps/glad_gl.c || cmake_object_order_depends_target_gears
   DEP_FILE = vendor/glfw/examples/CMakeFiles/gears.dir/__/deps/glad_gl.c.o.d
@@ -542,6 +598,8 @@ build vendor/glfw/examples/CMakeFiles/gears.dir/__/deps/glad_gl.c.o: C_COMPILER_
   INCLUDES = -I/home/double-dev/Projects/Hackathon/vendor/glfw/deps -I/home/double-dev/Projects/Hackathon/vendor/glfw/include
   OBJECT_DIR = vendor/glfw/examples/CMakeFiles/gears.dir
   OBJECT_FILE_DIR = vendor/glfw/examples/CMakeFiles/gears.dir/__/deps
+  TARGET_COMPILE_PDB = vendor/glfw/examples/CMakeFiles/gears.dir/
+  TARGET_PDB = vendor/glfw/examples/gears.pdb
 
 
 # =============================================================================
@@ -557,8 +615,9 @@ build vendor/glfw/examples/gears: C_EXECUTABLE_LINKER__gears_Debug vendor/glfw/e
   OBJECT_DIR = vendor/glfw/examples/CMakeFiles/gears.dir
   POST_BUILD = :
   PRE_LINK = :
+  TARGET_COMPILE_PDB = vendor/glfw/examples/CMakeFiles/gears.dir/
   TARGET_FILE = vendor/glfw/examples/gears
-  TARGET_PDB = gears.dbg
+  TARGET_PDB = vendor/glfw/examples/gears.pdb
 
 # =============================================================================
 # Object build statements for EXECUTABLE target heightmap
@@ -575,6 +634,8 @@ build vendor/glfw/examples/CMakeFiles/heightmap.dir/heightmap.c.o: C_COMPILER__h
   INCLUDES = -I/home/double-dev/Projects/Hackathon/vendor/glfw/deps -I/home/double-dev/Projects/Hackathon/vendor/glfw/include
   OBJECT_DIR = vendor/glfw/examples/CMakeFiles/heightmap.dir
   OBJECT_FILE_DIR = vendor/glfw/examples/CMakeFiles/heightmap.dir
+  TARGET_COMPILE_PDB = vendor/glfw/examples/CMakeFiles/heightmap.dir/
+  TARGET_PDB = vendor/glfw/examples/heightmap.pdb
 
 build vendor/glfw/examples/CMakeFiles/heightmap.dir/__/deps/glad_gl.c.o: C_COMPILER__heightmap_unscanned_Debug /home/double-dev/Projects/Hackathon/vendor/glfw/deps/glad_gl.c || cmake_object_order_depends_target_heightmap
   DEP_FILE = vendor/glfw/examples/CMakeFiles/heightmap.dir/__/deps/glad_gl.c.o.d
@@ -582,6 +643,8 @@ build vendor/glfw/examples/CMakeFiles/heightmap.dir/__/deps/glad_gl.c.o: C_COMPI
   INCLUDES = -I/home/double-dev/Projects/Hackathon/vendor/glfw/deps -I/home/double-dev/Projects/Hackathon/vendor/glfw/include
   OBJECT_DIR = vendor/glfw/examples/CMakeFiles/heightmap.dir
   OBJECT_FILE_DIR = vendor/glfw/examples/CMakeFiles/heightmap.dir/__/deps
+  TARGET_COMPILE_PDB = vendor/glfw/examples/CMakeFiles/heightmap.dir/
+  TARGET_PDB = vendor/glfw/examples/heightmap.pdb
 
 
 # =============================================================================
@@ -597,8 +660,9 @@ build vendor/glfw/examples/heightmap: C_EXECUTABLE_LINKER__heightmap_Debug vendo
   OBJECT_DIR = vendor/glfw/examples/CMakeFiles/heightmap.dir
   POST_BUILD = :
   PRE_LINK = :
+  TARGET_COMPILE_PDB = vendor/glfw/examples/CMakeFiles/heightmap.dir/
   TARGET_FILE = vendor/glfw/examples/heightmap
-  TARGET_PDB = heightmap.dbg
+  TARGET_PDB = vendor/glfw/examples/heightmap.pdb
 
 # =============================================================================
 # Object build statements for EXECUTABLE target offscreen
@@ -615,6 +679,8 @@ build vendor/glfw/examples/CMakeFiles/offscreen.dir/offscreen.c.o: C_COMPILER__o
   INCLUDES = -I/home/double-dev/Projects/Hackathon/vendor/glfw/deps -I/home/double-dev/Projects/Hackathon/vendor/glfw/include
   OBJECT_DIR = vendor/glfw/examples/CMakeFiles/offscreen.dir
   OBJECT_FILE_DIR = vendor/glfw/examples/CMakeFiles/offscreen.dir
+  TARGET_COMPILE_PDB = vendor/glfw/examples/CMakeFiles/offscreen.dir/
+  TARGET_PDB = vendor/glfw/examples/offscreen.pdb
 
 build vendor/glfw/examples/CMakeFiles/offscreen.dir/__/deps/glad_gl.c.o: C_COMPILER__offscreen_unscanned_Debug /home/double-dev/Projects/Hackathon/vendor/glfw/deps/glad_gl.c || cmake_object_order_depends_target_offscreen
   DEP_FILE = vendor/glfw/examples/CMakeFiles/offscreen.dir/__/deps/glad_gl.c.o.d
@@ -622,6 +688,8 @@ build vendor/glfw/examples/CMakeFiles/offscreen.dir/__/deps/glad_gl.c.o: C_COMPI
   INCLUDES = -I/home/double-dev/Projects/Hackathon/vendor/glfw/deps -I/home/double-dev/Projects/Hackathon/vendor/glfw/include
   OBJECT_DIR = vendor/glfw/examples/CMakeFiles/offscreen.dir
   OBJECT_FILE_DIR = vendor/glfw/examples/CMakeFiles/offscreen.dir/__/deps
+  TARGET_COMPILE_PDB = vendor/glfw/examples/CMakeFiles/offscreen.dir/
+  TARGET_PDB = vendor/glfw/examples/offscreen.pdb
 
 
 # =============================================================================
@@ -637,8 +705,9 @@ build vendor/glfw/examples/offscreen: C_EXECUTABLE_LINKER__offscreen_Debug vendo
   OBJECT_DIR = vendor/glfw/examples/CMakeFiles/offscreen.dir
   POST_BUILD = :
   PRE_LINK = :
+  TARGET_COMPILE_PDB = vendor/glfw/examples/CMakeFiles/offscreen.dir/
   TARGET_FILE = vendor/glfw/examples/offscreen
-  TARGET_PDB = offscreen.dbg
+  TARGET_PDB = vendor/glfw/examples/offscreen.pdb
 
 # =============================================================================
 # Object build statements for EXECUTABLE target particles
@@ -655,6 +724,8 @@ build vendor/glfw/examples/CMakeFiles/particles.dir/particles.c.o: C_COMPILER__p
   INCLUDES = -I/home/double-dev/Projects/Hackathon/vendor/glfw/deps -I/home/double-dev/Projects/Hackathon/vendor/glfw/include
   OBJECT_DIR = vendor/glfw/examples/CMakeFiles/particles.dir
   OBJECT_FILE_DIR = vendor/glfw/examples/CMakeFiles/particles.dir
+  TARGET_COMPILE_PDB = vendor/glfw/examples/CMakeFiles/particles.dir/
+  TARGET_PDB = vendor/glfw/examples/particles.pdb
 
 build vendor/glfw/examples/CMakeFiles/particles.dir/__/deps/tinycthread.c.o: C_COMPILER__particles_unscanned_Debug /home/double-dev/Projects/Hackathon/vendor/glfw/deps/tinycthread.c || cmake_object_order_depends_target_particles
   DEP_FILE = vendor/glfw/examples/CMakeFiles/particles.dir/__/deps/tinycthread.c.o.d
@@ -662,6 +733,8 @@ build vendor/glfw/examples/CMakeFiles/particles.dir/__/deps/tinycthread.c.o: C_C
   INCLUDES = -I/home/double-dev/Projects/Hackathon/vendor/glfw/deps -I/home/double-dev/Projects/Hackathon/vendor/glfw/include
   OBJECT_DIR = vendor/glfw/examples/CMakeFiles/particles.dir
   OBJECT_FILE_DIR = vendor/glfw/examples/CMakeFiles/particles.dir/__/deps
+  TARGET_COMPILE_PDB = vendor/glfw/examples/CMakeFiles/particles.dir/
+  TARGET_PDB = vendor/glfw/examples/particles.pdb
 
 build vendor/glfw/examples/CMakeFiles/particles.dir/__/deps/getopt.c.o: C_COMPILER__particles_unscanned_Debug /home/double-dev/Projects/Hackathon/vendor/glfw/deps/getopt.c || cmake_object_order_depends_target_particles
   DEP_FILE = vendor/glfw/examples/CMakeFiles/particles.dir/__/deps/getopt.c.o.d
@@ -669,6 +742,8 @@ build vendor/glfw/examples/CMakeFiles/particles.dir/__/deps/getopt.c.o: C_COMPIL
   INCLUDES = -I/home/double-dev/Projects/Hackathon/vendor/glfw/deps -I/home/double-dev/Projects/Hackathon/vendor/glfw/include
   OBJECT_DIR = vendor/glfw/examples/CMakeFiles/particles.dir
   OBJECT_FILE_DIR = vendor/glfw/examples/CMakeFiles/particles.dir/__/deps
+  TARGET_COMPILE_PDB = vendor/glfw/examples/CMakeFiles/particles.dir/
+  TARGET_PDB = vendor/glfw/examples/particles.pdb
 
 build vendor/glfw/examples/CMakeFiles/particles.dir/__/deps/glad_gl.c.o: C_COMPILER__particles_unscanned_Debug /home/double-dev/Projects/Hackathon/vendor/glfw/deps/glad_gl.c || cmake_object_order_depends_target_particles
   DEP_FILE = vendor/glfw/examples/CMakeFiles/particles.dir/__/deps/glad_gl.c.o.d
@@ -676,6 +751,8 @@ build vendor/glfw/examples/CMakeFiles/particles.dir/__/deps/glad_gl.c.o: C_COMPI
   INCLUDES = -I/home/double-dev/Projects/Hackathon/vendor/glfw/deps -I/home/double-dev/Projects/Hackathon/vendor/glfw/include
   OBJECT_DIR = vendor/glfw/examples/CMakeFiles/particles.dir
   OBJECT_FILE_DIR = vendor/glfw/examples/CMakeFiles/particles.dir/__/deps
+  TARGET_COMPILE_PDB = vendor/glfw/examples/CMakeFiles/particles.dir/
+  TARGET_PDB = vendor/glfw/examples/particles.pdb
 
 
 # =============================================================================
@@ -691,8 +768,9 @@ build vendor/glfw/examples/particles: C_EXECUTABLE_LINKER__particles_Debug vendo
   OBJECT_DIR = vendor/glfw/examples/CMakeFiles/particles.dir
   POST_BUILD = :
   PRE_LINK = :
+  TARGET_COMPILE_PDB = vendor/glfw/examples/CMakeFiles/particles.dir/
   TARGET_FILE = vendor/glfw/examples/particles
-  TARGET_PDB = particles.dbg
+  TARGET_PDB = vendor/glfw/examples/particles.pdb
 
 # =============================================================================
 # Object build statements for EXECUTABLE target sharing
@@ -709,6 +787,8 @@ build vendor/glfw/examples/CMakeFiles/sharing.dir/sharing.c.o: C_COMPILER__shari
   INCLUDES = -I/home/double-dev/Projects/Hackathon/vendor/glfw/deps -I/home/double-dev/Projects/Hackathon/vendor/glfw/include
   OBJECT_DIR = vendor/glfw/examples/CMakeFiles/sharing.dir
   OBJECT_FILE_DIR = vendor/glfw/examples/CMakeFiles/sharing.dir
+  TARGET_COMPILE_PDB = vendor/glfw/examples/CMakeFiles/sharing.dir/
+  TARGET_PDB = vendor/glfw/examples/sharing.pdb
 
 build vendor/glfw/examples/CMakeFiles/sharing.dir/__/deps/glad_gl.c.o: C_COMPILER__sharing_unscanned_Debug /home/double-dev/Projects/Hackathon/vendor/glfw/deps/glad_gl.c || cmake_object_order_depends_target_sharing
   DEP_FILE = vendor/glfw/examples/CMakeFiles/sharing.dir/__/deps/glad_gl.c.o.d
@@ -716,6 +796,8 @@ build vendor/glfw/examples/CMakeFiles/sharing.dir/__/deps/glad_gl.c.o: C_COMPILE
   INCLUDES = -I/home/double-dev/Projects/Hackathon/vendor/glfw/deps -I/home/double-dev/Projects/Hackathon/vendor/glfw/include
   OBJECT_DIR = vendor/glfw/examples/CMakeFiles/sharing.dir
   OBJECT_FILE_DIR = vendor/glfw/examples/CMakeFiles/sharing.dir/__/deps
+  TARGET_COMPILE_PDB = vendor/glfw/examples/CMakeFiles/sharing.dir/
+  TARGET_PDB = vendor/glfw/examples/sharing.pdb
 
 
 # =============================================================================
@@ -731,8 +813,9 @@ build vendor/glfw/examples/sharing: C_EXECUTABLE_LINKER__sharing_Debug vendor/gl
   OBJECT_DIR = vendor/glfw/examples/CMakeFiles/sharing.dir
   POST_BUILD = :
   PRE_LINK = :
+  TARGET_COMPILE_PDB = vendor/glfw/examples/CMakeFiles/sharing.dir/
   TARGET_FILE = vendor/glfw/examples/sharing
-  TARGET_PDB = sharing.dbg
+  TARGET_PDB = vendor/glfw/examples/sharing.pdb
 
 # =============================================================================
 # Object build statements for EXECUTABLE target simple
@@ -749,6 +832,8 @@ build vendor/glfw/examples/CMakeFiles/simple.dir/simple.c.o: C_COMPILER__simple_
   INCLUDES = -I/home/double-dev/Projects/Hackathon/vendor/glfw/deps -I/home/double-dev/Projects/Hackathon/vendor/glfw/include
   OBJECT_DIR = vendor/glfw/examples/CMakeFiles/simple.dir
   OBJECT_FILE_DIR = vendor/glfw/examples/CMakeFiles/simple.dir
+  TARGET_COMPILE_PDB = vendor/glfw/examples/CMakeFiles/simple.dir/
+  TARGET_PDB = vendor/glfw/examples/simple.pdb
 
 build vendor/glfw/examples/CMakeFiles/simple.dir/__/deps/glad_gl.c.o: C_COMPILER__simple_unscanned_Debug /home/double-dev/Projects/Hackathon/vendor/glfw/deps/glad_gl.c || cmake_object_order_depends_target_simple
   DEP_FILE = vendor/glfw/examples/CMakeFiles/simple.dir/__/deps/glad_gl.c.o.d
@@ -756,6 +841,8 @@ build vendor/glfw/examples/CMakeFiles/simple.dir/__/deps/glad_gl.c.o: C_COMPILER
   INCLUDES = -I/home/double-dev/Projects/Hackathon/vendor/glfw/deps -I/home/double-dev/Projects/Hackathon/vendor/glfw/include
   OBJECT_DIR = vendor/glfw/examples/CMakeFiles/simple.dir
   OBJECT_FILE_DIR = vendor/glfw/examples/CMakeFiles/simple.dir/__/deps
+  TARGET_COMPILE_PDB = vendor/glfw/examples/CMakeFiles/simple.dir/
+  TARGET_PDB = vendor/glfw/examples/simple.pdb
 
 
 # =============================================================================
@@ -771,8 +858,9 @@ build vendor/glfw/examples/simple: C_EXECUTABLE_LINKER__simple_Debug vendor/glfw
   OBJECT_DIR = vendor/glfw/examples/CMakeFiles/simple.dir
   POST_BUILD = :
   PRE_LINK = :
+  TARGET_COMPILE_PDB = vendor/glfw/examples/CMakeFiles/simple.dir/
   TARGET_FILE = vendor/glfw/examples/simple
-  TARGET_PDB = simple.dbg
+  TARGET_PDB = vendor/glfw/examples/simple.pdb
 
 # =============================================================================
 # Object build statements for EXECUTABLE target splitview
@@ -789,6 +877,8 @@ build vendor/glfw/examples/CMakeFiles/splitview.dir/splitview.c.o: C_COMPILER__s
   INCLUDES = -I/home/double-dev/Projects/Hackathon/vendor/glfw/deps -I/home/double-dev/Projects/Hackathon/vendor/glfw/include
   OBJECT_DIR = vendor/glfw/examples/CMakeFiles/splitview.dir
   OBJECT_FILE_DIR = vendor/glfw/examples/CMakeFiles/splitview.dir
+  TARGET_COMPILE_PDB = vendor/glfw/examples/CMakeFiles/splitview.dir/
+  TARGET_PDB = vendor/glfw/examples/splitview.pdb
 
 build vendor/glfw/examples/CMakeFiles/splitview.dir/__/deps/glad_gl.c.o: C_COMPILER__splitview_unscanned_Debug /home/double-dev/Projects/Hackathon/vendor/glfw/deps/glad_gl.c || cmake_object_order_depends_target_splitview
   DEP_FILE = vendor/glfw/examples/CMakeFiles/splitview.dir/__/deps/glad_gl.c.o.d
@@ -796,6 +886,8 @@ build vendor/glfw/examples/CMakeFiles/splitview.dir/__/deps/glad_gl.c.o: C_COMPI
   INCLUDES = -I/home/double-dev/Projects/Hackathon/vendor/glfw/deps -I/home/double-dev/Projects/Hackathon/vendor/glfw/include
   OBJECT_DIR = vendor/glfw/examples/CMakeFiles/splitview.dir
   OBJECT_FILE_DIR = vendor/glfw/examples/CMakeFiles/splitview.dir/__/deps
+  TARGET_COMPILE_PDB = vendor/glfw/examples/CMakeFiles/splitview.dir/
+  TARGET_PDB = vendor/glfw/examples/splitview.pdb
 
 
 # =============================================================================
@@ -811,8 +903,9 @@ build vendor/glfw/examples/splitview: C_EXECUTABLE_LINKER__splitview_Debug vendo
   OBJECT_DIR = vendor/glfw/examples/CMakeFiles/splitview.dir
   POST_BUILD = :
   PRE_LINK = :
+  TARGET_COMPILE_PDB = vendor/glfw/examples/CMakeFiles/splitview.dir/
   TARGET_FILE = vendor/glfw/examples/splitview
-  TARGET_PDB = splitview.dbg
+  TARGET_PDB = vendor/glfw/examples/splitview.pdb
 
 # =============================================================================
 # Object build statements for EXECUTABLE target wave
@@ -829,6 +922,8 @@ build vendor/glfw/examples/CMakeFiles/wave.dir/wave.c.o: C_COMPILER__wave_unscan
   INCLUDES = -I/home/double-dev/Projects/Hackathon/vendor/glfw/deps -I/home/double-dev/Projects/Hackathon/vendor/glfw/include
   OBJECT_DIR = vendor/glfw/examples/CMakeFiles/wave.dir
   OBJECT_FILE_DIR = vendor/glfw/examples/CMakeFiles/wave.dir
+  TARGET_COMPILE_PDB = vendor/glfw/examples/CMakeFiles/wave.dir/
+  TARGET_PDB = vendor/glfw/examples/wave.pdb
 
 build vendor/glfw/examples/CMakeFiles/wave.dir/__/deps/glad_gl.c.o: C_COMPILER__wave_unscanned_Debug /home/double-dev/Projects/Hackathon/vendor/glfw/deps/glad_gl.c || cmake_object_order_depends_target_wave
   DEP_FILE = vendor/glfw/examples/CMakeFiles/wave.dir/__/deps/glad_gl.c.o.d
@@ -836,6 +931,8 @@ build vendor/glfw/examples/CMakeFiles/wave.dir/__/deps/glad_gl.c.o: C_COMPILER__
   INCLUDES = -I/home/double-dev/Projects/Hackathon/vendor/glfw/deps -I/home/double-dev/Projects/Hackathon/vendor/glfw/include
   OBJECT_DIR = vendor/glfw/examples/CMakeFiles/wave.dir
   OBJECT_FILE_DIR = vendor/glfw/examples/CMakeFiles/wave.dir/__/deps
+  TARGET_COMPILE_PDB = vendor/glfw/examples/CMakeFiles/wave.dir/
+  TARGET_PDB = vendor/glfw/examples/wave.pdb
 
 
 # =============================================================================
@@ -851,8 +948,9 @@ build vendor/glfw/examples/wave: C_EXECUTABLE_LINKER__wave_Debug vendor/glfw/exa
   OBJECT_DIR = vendor/glfw/examples/CMakeFiles/wave.dir
   POST_BUILD = :
   PRE_LINK = :
+  TARGET_COMPILE_PDB = vendor/glfw/examples/CMakeFiles/wave.dir/
   TARGET_FILE = vendor/glfw/examples/wave
-  TARGET_PDB = wave.dbg
+  TARGET_PDB = vendor/glfw/examples/wave.pdb
 
 
 #############################################
@@ -940,6 +1038,8 @@ build vendor/glfw/tests/CMakeFiles/clipboard.dir/clipboard.c.o: C_COMPILER__clip
   INCLUDES = -I/home/double-dev/Projects/Hackathon/vendor/glfw/deps -I/home/double-dev/Projects/Hackathon/vendor/glfw/include
   OBJECT_DIR = vendor/glfw/tests/CMakeFiles/clipboard.dir
   OBJECT_FILE_DIR = vendor/glfw/tests/CMakeFiles/clipboard.dir
+  TARGET_COMPILE_PDB = vendor/glfw/tests/CMakeFiles/clipboard.dir/
+  TARGET_PDB = vendor/glfw/tests/clipboard.pdb
 
 build vendor/glfw/tests/CMakeFiles/clipboard.dir/__/deps/getopt.c.o: C_COMPILER__clipboard_unscanned_Debug /home/double-dev/Projects/Hackathon/vendor/glfw/deps/getopt.c || cmake_object_order_depends_target_clipboard
   DEP_FILE = vendor/glfw/tests/CMakeFiles/clipboard.dir/__/deps/getopt.c.o.d
@@ -947,6 +1047,8 @@ build vendor/glfw/tests/CMakeFiles/clipboard.dir/__/deps/getopt.c.o: C_COMPILER_
   INCLUDES = -I/home/double-dev/Projects/Hackathon/vendor/glfw/deps -I/home/double-dev/Projects/Hackathon/vendor/glfw/include
   OBJECT_DIR = vendor/glfw/tests/CMakeFiles/clipboard.dir
   OBJECT_FILE_DIR = vendor/glfw/tests/CMakeFiles/clipboard.dir/__/deps
+  TARGET_COMPILE_PDB = vendor/glfw/tests/CMakeFiles/clipboard.dir/
+  TARGET_PDB = vendor/glfw/tests/clipboard.pdb
 
 build vendor/glfw/tests/CMakeFiles/clipboard.dir/__/deps/glad_gl.c.o: C_COMPILER__clipboard_unscanned_Debug /home/double-dev/Projects/Hackathon/vendor/glfw/deps/glad_gl.c || cmake_object_order_depends_target_clipboard
   DEP_FILE = vendor/glfw/tests/CMakeFiles/clipboard.dir/__/deps/glad_gl.c.o.d
@@ -954,6 +1056,8 @@ build vendor/glfw/tests/CMakeFiles/clipboard.dir/__/deps/glad_gl.c.o: C_COMPILER
   INCLUDES = -I/home/double-dev/Projects/Hackathon/vendor/glfw/deps -I/home/double-dev/Projects/Hackathon/vendor/glfw/include
   OBJECT_DIR = vendor/glfw/tests/CMakeFiles/clipboard.dir
   OBJECT_FILE_DIR = vendor/glfw/tests/CMakeFiles/clipboard.dir/__/deps
+  TARGET_COMPILE_PDB = vendor/glfw/tests/CMakeFiles/clipboard.dir/
+  TARGET_PDB = vendor/glfw/tests/clipboard.pdb
 
 
 # =============================================================================
@@ -969,8 +1073,9 @@ build vendor/glfw/tests/clipboard: C_EXECUTABLE_LINKER__clipboard_Debug vendor/g
   OBJECT_DIR = vendor/glfw/tests/CMakeFiles/clipboard.dir
   POST_BUILD = :
   PRE_LINK = :
+  TARGET_COMPILE_PDB = vendor/glfw/tests/CMakeFiles/clipboard.dir/
   TARGET_FILE = vendor/glfw/tests/clipboard
-  TARGET_PDB = clipboard.dbg
+  TARGET_PDB = vendor/glfw/tests/clipboard.pdb
 
 # =============================================================================
 # Object build statements for EXECUTABLE target events
@@ -987,6 +1092,8 @@ build vendor/glfw/tests/CMakeFiles/events.dir/events.c.o: C_COMPILER__events_uns
   INCLUDES = -I/home/double-dev/Projects/Hackathon/vendor/glfw/deps -I/home/double-dev/Projects/Hackathon/vendor/glfw/include
   OBJECT_DIR = vendor/glfw/tests/CMakeFiles/events.dir
   OBJECT_FILE_DIR = vendor/glfw/tests/CMakeFiles/events.dir
+  TARGET_COMPILE_PDB = vendor/glfw/tests/CMakeFiles/events.dir/
+  TARGET_PDB = vendor/glfw/tests/events.pdb
 
 build vendor/glfw/tests/CMakeFiles/events.dir/__/deps/getopt.c.o: C_COMPILER__events_unscanned_Debug /home/double-dev/Projects/Hackathon/vendor/glfw/deps/getopt.c || cmake_object_order_depends_target_events
   DEP_FILE = vendor/glfw/tests/CMakeFiles/events.dir/__/deps/getopt.c.o.d
@@ -994,6 +1101,8 @@ build vendor/glfw/tests/CMakeFiles/events.dir/__/deps/getopt.c.o: C_COMPILER__ev
   INCLUDES = -I/home/double-dev/Projects/Hackathon/vendor/glfw/deps -I/home/double-dev/Projects/Hackathon/vendor/glfw/include
   OBJECT_DIR = vendor/glfw/tests/CMakeFiles/events.dir
   OBJECT_FILE_DIR = vendor/glfw/tests/CMakeFiles/events.dir/__/deps
+  TARGET_COMPILE_PDB = vendor/glfw/tests/CMakeFiles/events.dir/
+  TARGET_PDB = vendor/glfw/tests/events.pdb
 
 build vendor/glfw/tests/CMakeFiles/events.dir/__/deps/glad_gl.c.o: C_COMPILER__events_unscanned_Debug /home/double-dev/Projects/Hackathon/vendor/glfw/deps/glad_gl.c || cmake_object_order_depends_target_events
   DEP_FILE = vendor/glfw/tests/CMakeFiles/events.dir/__/deps/glad_gl.c.o.d
@@ -1001,6 +1110,8 @@ build vendor/glfw/tests/CMakeFiles/events.dir/__/deps/glad_gl.c.o: C_COMPILER__e
   INCLUDES = -I/home/double-dev/Projects/Hackathon/vendor/glfw/deps -I/home/double-dev/Projects/Hackathon/vendor/glfw/include
   OBJECT_DIR = vendor/glfw/tests/CMakeFiles/events.dir
   OBJECT_FILE_DIR = vendor/glfw/tests/CMakeFiles/events.dir/__/deps
+  TARGET_COMPILE_PDB = vendor/glfw/tests/CMakeFiles/events.dir/
+  TARGET_PDB = vendor/glfw/tests/events.pdb
 
 
 # =============================================================================
@@ -1016,8 +1127,9 @@ build vendor/glfw/tests/events: C_EXECUTABLE_LINKER__events_Debug vendor/glfw/te
   OBJECT_DIR = vendor/glfw/tests/CMakeFiles/events.dir
   POST_BUILD = :
   PRE_LINK = :
+  TARGET_COMPILE_PDB = vendor/glfw/tests/CMakeFiles/events.dir/
   TARGET_FILE = vendor/glfw/tests/events
-  TARGET_PDB = events.dbg
+  TARGET_PDB = vendor/glfw/tests/events.pdb
 
 # =============================================================================
 # Object build statements for EXECUTABLE target msaa
@@ -1034,6 +1146,8 @@ build vendor/glfw/tests/CMakeFiles/msaa.dir/msaa.c.o: C_COMPILER__msaa_unscanned
   INCLUDES = -I/home/double-dev/Projects/Hackathon/vendor/glfw/deps -I/home/double-dev/Projects/Hackathon/vendor/glfw/include
   OBJECT_DIR = vendor/glfw/tests/CMakeFiles/msaa.dir
   OBJECT_FILE_DIR = vendor/glfw/tests/CMakeFiles/msaa.dir
+  TARGET_COMPILE_PDB = vendor/glfw/tests/CMakeFiles/msaa.dir/
+  TARGET_PDB = vendor/glfw/tests/msaa.pdb
 
 build vendor/glfw/tests/CMakeFiles/msaa.dir/__/deps/getopt.c.o: C_COMPILER__msaa_unscanned_Debug /home/double-dev/Projects/Hackathon/vendor/glfw/deps/getopt.c || cmake_object_order_depends_target_msaa
   DEP_FILE = vendor/glfw/tests/CMakeFiles/msaa.dir/__/deps/getopt.c.o.d
@@ -1041,6 +1155,8 @@ build vendor/glfw/tests/CMakeFiles/msaa.dir/__/deps/getopt.c.o: C_COMPILER__msaa
   INCLUDES = -I/home/double-dev/Projects/Hackathon/vendor/glfw/deps -I/home/double-dev/Projects/Hackathon/vendor/glfw/include
   OBJECT_DIR = vendor/glfw/tests/CMakeFiles/msaa.dir
   OBJECT_FILE_DIR = vendor/glfw/tests/CMakeFiles/msaa.dir/__/deps
+  TARGET_COMPILE_PDB = vendor/glfw/tests/CMakeFiles/msaa.dir/
+  TARGET_PDB = vendor/glfw/tests/msaa.pdb
 
 build vendor/glfw/tests/CMakeFiles/msaa.dir/__/deps/glad_gl.c.o: C_COMPILER__msaa_unscanned_Debug /home/double-dev/Projects/Hackathon/vendor/glfw/deps/glad_gl.c || cmake_object_order_depends_target_msaa
   DEP_FILE = vendor/glfw/tests/CMakeFiles/msaa.dir/__/deps/glad_gl.c.o.d
@@ -1048,6 +1164,8 @@ build vendor/glfw/tests/CMakeFiles/msaa.dir/__/deps/glad_gl.c.o: C_COMPILER__msa
   INCLUDES = -I/home/double-dev/Projects/Hackathon/vendor/glfw/deps -I/home/double-dev/Projects/Hackathon/vendor/glfw/include
   OBJECT_DIR = vendor/glfw/tests/CMakeFiles/msaa.dir
   OBJECT_FILE_DIR = vendor/glfw/tests/CMakeFiles/msaa.dir/__/deps
+  TARGET_COMPILE_PDB = vendor/glfw/tests/CMakeFiles/msaa.dir/
+  TARGET_PDB = vendor/glfw/tests/msaa.pdb
 
 
 # =============================================================================
@@ -1063,8 +1181,9 @@ build vendor/glfw/tests/msaa: C_EXECUTABLE_LINKER__msaa_Debug vendor/glfw/tests/
   OBJECT_DIR = vendor/glfw/tests/CMakeFiles/msaa.dir
   POST_BUILD = :
   PRE_LINK = :
+  TARGET_COMPILE_PDB = vendor/glfw/tests/CMakeFiles/msaa.dir/
   TARGET_FILE = vendor/glfw/tests/msaa
-  TARGET_PDB = msaa.dbg
+  TARGET_PDB = vendor/glfw/tests/msaa.pdb
 
 # =============================================================================
 # Object build statements for EXECUTABLE target glfwinfo
@@ -1081,6 +1200,8 @@ build vendor/glfw/tests/CMakeFiles/glfwinfo.dir/glfwinfo.c.o: C_COMPILER__glfwin
   INCLUDES = -I/home/double-dev/Projects/Hackathon/vendor/glfw/deps -I/home/double-dev/Projects/Hackathon/vendor/glfw/include
   OBJECT_DIR = vendor/glfw/tests/CMakeFiles/glfwinfo.dir
   OBJECT_FILE_DIR = vendor/glfw/tests/CMakeFiles/glfwinfo.dir
+  TARGET_COMPILE_PDB = vendor/glfw/tests/CMakeFiles/glfwinfo.dir/
+  TARGET_PDB = vendor/glfw/tests/glfwinfo.pdb
 
 build vendor/glfw/tests/CMakeFiles/glfwinfo.dir/__/deps/getopt.c.o: C_COMPILER__glfwinfo_unscanned_Debug /home/double-dev/Projects/Hackathon/vendor/glfw/deps/getopt.c || cmake_object_order_depends_target_glfwinfo
   DEP_FILE = vendor/glfw/tests/CMakeFiles/glfwinfo.dir/__/deps/getopt.c.o.d
@@ -1088,6 +1209,8 @@ build vendor/glfw/tests/CMakeFiles/glfwinfo.dir/__/deps/getopt.c.o: C_COMPILER__
   INCLUDES = -I/home/double-dev/Projects/Hackathon/vendor/glfw/deps -I/home/double-dev/Projects/Hackathon/vendor/glfw/include
   OBJECT_DIR = vendor/glfw/tests/CMakeFiles/glfwinfo.dir
   OBJECT_FILE_DIR = vendor/glfw/tests/CMakeFiles/glfwinfo.dir/__/deps
+  TARGET_COMPILE_PDB = vendor/glfw/tests/CMakeFiles/glfwinfo.dir/
+  TARGET_PDB = vendor/glfw/tests/glfwinfo.pdb
 
 build vendor/glfw/tests/CMakeFiles/glfwinfo.dir/__/deps/glad_gl.c.o: C_COMPILER__glfwinfo_unscanned_Debug /home/double-dev/Projects/Hackathon/vendor/glfw/deps/glad_gl.c || cmake_object_order_depends_target_glfwinfo
   DEP_FILE = vendor/glfw/tests/CMakeFiles/glfwinfo.dir/__/deps/glad_gl.c.o.d
@@ -1095,6 +1218,8 @@ build vendor/glfw/tests/CMakeFiles/glfwinfo.dir/__/deps/glad_gl.c.o: C_COMPILER_
   INCLUDES = -I/home/double-dev/Projects/Hackathon/vendor/glfw/deps -I/home/double-dev/Projects/Hackathon/vendor/glfw/include
   OBJECT_DIR = vendor/glfw/tests/CMakeFiles/glfwinfo.dir
   OBJECT_FILE_DIR = vendor/glfw/tests/CMakeFiles/glfwinfo.dir/__/deps
+  TARGET_COMPILE_PDB = vendor/glfw/tests/CMakeFiles/glfwinfo.dir/
+  TARGET_PDB = vendor/glfw/tests/glfwinfo.pdb
 
 build vendor/glfw/tests/CMakeFiles/glfwinfo.dir/__/deps/glad_vulkan.c.o: C_COMPILER__glfwinfo_unscanned_Debug /home/double-dev/Projects/Hackathon/vendor/glfw/deps/glad_vulkan.c || cmake_object_order_depends_target_glfwinfo
   DEP_FILE = vendor/glfw/tests/CMakeFiles/glfwinfo.dir/__/deps/glad_vulkan.c.o.d
@@ -1102,6 +1227,8 @@ build vendor/glfw/tests/CMakeFiles/glfwinfo.dir/__/deps/glad_vulkan.c.o: C_COMPI
   INCLUDES = -I/home/double-dev/Projects/Hackathon/vendor/glfw/deps -I/home/double-dev/Projects/Hackathon/vendor/glfw/include
   OBJECT_DIR = vendor/glfw/tests/CMakeFiles/glfwinfo.dir
   OBJECT_FILE_DIR = vendor/glfw/tests/CMakeFiles/glfwinfo.dir/__/deps
+  TARGET_COMPILE_PDB = vendor/glfw/tests/CMakeFiles/glfwinfo.dir/
+  TARGET_PDB = vendor/glfw/tests/glfwinfo.pdb
 
 
 # =============================================================================
@@ -1117,8 +1244,9 @@ build vendor/glfw/tests/glfwinfo: C_EXECUTABLE_LINKER__glfwinfo_Debug vendor/glf
   OBJECT_DIR = vendor/glfw/tests/CMakeFiles/glfwinfo.dir
   POST_BUILD = :
   PRE_LINK = :
+  TARGET_COMPILE_PDB = vendor/glfw/tests/CMakeFiles/glfwinfo.dir/
   TARGET_FILE = vendor/glfw/tests/glfwinfo
-  TARGET_PDB = glfwinfo.dbg
+  TARGET_PDB = vendor/glfw/tests/glfwinfo.pdb
 
 # =============================================================================
 # Object build statements for EXECUTABLE target iconify
@@ -1135,6 +1263,8 @@ build vendor/glfw/tests/CMakeFiles/iconify.dir/iconify.c.o: C_COMPILER__iconify_
   INCLUDES = -I/home/double-dev/Projects/Hackathon/vendor/glfw/deps -I/home/double-dev/Projects/Hackathon/vendor/glfw/include
   OBJECT_DIR = vendor/glfw/tests/CMakeFiles/iconify.dir
   OBJECT_FILE_DIR = vendor/glfw/tests/CMakeFiles/iconify.dir
+  TARGET_COMPILE_PDB = vendor/glfw/tests/CMakeFiles/iconify.dir/
+  TARGET_PDB = vendor/glfw/tests/iconify.pdb
 
 build vendor/glfw/tests/CMakeFiles/iconify.dir/__/deps/getopt.c.o: C_COMPILER__iconify_unscanned_Debug /home/double-dev/Projects/Hackathon/vendor/glfw/deps/getopt.c || cmake_object_order_depends_target_iconify
   DEP_FILE = vendor/glfw/tests/CMakeFiles/iconify.dir/__/deps/getopt.c.o.d
@@ -1142,6 +1272,8 @@ build vendor/glfw/tests/CMakeFiles/iconify.dir/__/deps/getopt.c.o: C_COMPILER__i
   INCLUDES = -I/home/double-dev/Projects/Hackathon/vendor/glfw/deps -I/home/double-dev/Projects/Hackathon/vendor/glfw/include
   OBJECT_DIR = vendor/glfw/tests/CMakeFiles/iconify.dir
   OBJECT_FILE_DIR = vendor/glfw/tests/CMakeFiles/iconify.dir/__/deps
+  TARGET_COMPILE_PDB = vendor/glfw/tests/CMakeFiles/iconify.dir/
+  TARGET_PDB = vendor/glfw/tests/iconify.pdb
 
 build vendor/glfw/tests/CMakeFiles/iconify.dir/__/deps/glad_gl.c.o: C_COMPILER__iconify_unscanned_Debug /home/double-dev/Projects/Hackathon/vendor/glfw/deps/glad_gl.c || cmake_object_order_depends_target_iconify
   DEP_FILE = vendor/glfw/tests/CMakeFiles/iconify.dir/__/deps/glad_gl.c.o.d
@@ -1149,6 +1281,8 @@ build vendor/glfw/tests/CMakeFiles/iconify.dir/__/deps/glad_gl.c.o: C_COMPILER__
   INCLUDES = -I/home/double-dev/Projects/Hackathon/vendor/glfw/deps -I/home/double-dev/Projects/Hackathon/vendor/glfw/include
   OBJECT_DIR = vendor/glfw/tests/CMakeFiles/iconify.dir
   OBJECT_FILE_DIR = vendor/glfw/tests/CMakeFiles/iconify.dir/__/deps
+  TARGET_COMPILE_PDB = vendor/glfw/tests/CMakeFiles/iconify.dir/
+  TARGET_PDB = vendor/glfw/tests/iconify.pdb
 
 
 # =============================================================================
@@ -1164,8 +1298,9 @@ build vendor/glfw/tests/iconify: C_EXECUTABLE_LINKER__iconify_Debug vendor/glfw/
   OBJECT_DIR = vendor/glfw/tests/CMakeFiles/iconify.dir
   POST_BUILD = :
   PRE_LINK = :
+  TARGET_COMPILE_PDB = vendor/glfw/tests/CMakeFiles/iconify.dir/
   TARGET_FILE = vendor/glfw/tests/iconify
-  TARGET_PDB = iconify.dbg
+  TARGET_PDB = vendor/glfw/tests/iconify.pdb
 
 # =============================================================================
 # Object build statements for EXECUTABLE target monitors
@@ -1182,6 +1317,8 @@ build vendor/glfw/tests/CMakeFiles/monitors.dir/monitors.c.o: C_COMPILER__monito
   INCLUDES = -I/home/double-dev/Projects/Hackathon/vendor/glfw/deps -I/home/double-dev/Projects/Hackathon/vendor/glfw/include
   OBJECT_DIR = vendor/glfw/tests/CMakeFiles/monitors.dir
   OBJECT_FILE_DIR = vendor/glfw/tests/CMakeFiles/monitors.dir
+  TARGET_COMPILE_PDB = vendor/glfw/tests/CMakeFiles/monitors.dir/
+  TARGET_PDB = vendor/glfw/tests/monitors.pdb
 
 build vendor/glfw/tests/CMakeFiles/monitors.dir/__/deps/getopt.c.o: C_COMPILER__monitors_unscanned_Debug /home/double-dev/Projects/Hackathon/vendor/glfw/deps/getopt.c || cmake_object_order_depends_target_monitors
   DEP_FILE = vendor/glfw/tests/CMakeFiles/monitors.dir/__/deps/getopt.c.o.d
@@ -1189,6 +1326,8 @@ build vendor/glfw/tests/CMakeFiles/monitors.dir/__/deps/getopt.c.o: C_COMPILER__
   INCLUDES = -I/home/double-dev/Projects/Hackathon/vendor/glfw/deps -I/home/double-dev/Projects/Hackathon/vendor/glfw/include
   OBJECT_DIR = vendor/glfw/tests/CMakeFiles/monitors.dir
   OBJECT_FILE_DIR = vendor/glfw/tests/CMakeFiles/monitors.dir/__/deps
+  TARGET_COMPILE_PDB = vendor/glfw/tests/CMakeFiles/monitors.dir/
+  TARGET_PDB = vendor/glfw/tests/monitors.pdb
 
 build vendor/glfw/tests/CMakeFiles/monitors.dir/__/deps/glad_gl.c.o: C_COMPILER__monitors_unscanned_Debug /home/double-dev/Projects/Hackathon/vendor/glfw/deps/glad_gl.c || cmake_object_order_depends_target_monitors
   DEP_FILE = vendor/glfw/tests/CMakeFiles/monitors.dir/__/deps/glad_gl.c.o.d
@@ -1196,6 +1335,8 @@ build vendor/glfw/tests/CMakeFiles/monitors.dir/__/deps/glad_gl.c.o: C_COMPILER_
   INCLUDES = -I/home/double-dev/Projects/Hackathon/vendor/glfw/deps -I/home/double-dev/Projects/Hackathon/vendor/glfw/include
   OBJECT_DIR = vendor/glfw/tests/CMakeFiles/monitors.dir
   OBJECT_FILE_DIR = vendor/glfw/tests/CMakeFiles/monitors.dir/__/deps
+  TARGET_COMPILE_PDB = vendor/glfw/tests/CMakeFiles/monitors.dir/
+  TARGET_PDB = vendor/glfw/tests/monitors.pdb
 
 
 # =============================================================================
@@ -1211,8 +1352,9 @@ build vendor/glfw/tests/monitors: C_EXECUTABLE_LINKER__monitors_Debug vendor/glf
   OBJECT_DIR = vendor/glfw/tests/CMakeFiles/monitors.dir
   POST_BUILD = :
   PRE_LINK = :
+  TARGET_COMPILE_PDB = vendor/glfw/tests/CMakeFiles/monitors.dir/
   TARGET_FILE = vendor/glfw/tests/monitors
-  TARGET_PDB = monitors.dbg
+  TARGET_PDB = vendor/glfw/tests/monitors.pdb
 
 # =============================================================================
 # Object build statements for EXECUTABLE target reopen
@@ -1229,6 +1371,8 @@ build vendor/glfw/tests/CMakeFiles/reopen.dir/reopen.c.o: C_COMPILER__reopen_uns
   INCLUDES = -I/home/double-dev/Projects/Hackathon/vendor/glfw/deps -I/home/double-dev/Projects/Hackathon/vendor/glfw/include
   OBJECT_DIR = vendor/glfw/tests/CMakeFiles/reopen.dir
   OBJECT_FILE_DIR = vendor/glfw/tests/CMakeFiles/reopen.dir
+  TARGET_COMPILE_PDB = vendor/glfw/tests/CMakeFiles/reopen.dir/
+  TARGET_PDB = vendor/glfw/tests/reopen.pdb
 
 build vendor/glfw/tests/CMakeFiles/reopen.dir/__/deps/glad_gl.c.o: C_COMPILER__reopen_unscanned_Debug /home/double-dev/Projects/Hackathon/vendor/glfw/deps/glad_gl.c || cmake_object_order_depends_target_reopen
   DEP_FILE = vendor/glfw/tests/CMakeFiles/reopen.dir/__/deps/glad_gl.c.o.d
@@ -1236,6 +1380,8 @@ build vendor/glfw/tests/CMakeFiles/reopen.dir/__/deps/glad_gl.c.o: C_COMPILER__r
   INCLUDES = -I/home/double-dev/Projects/Hackathon/vendor/glfw/deps -I/home/double-dev/Projects/Hackathon/vendor/glfw/include
   OBJECT_DIR = vendor/glfw/tests/CMakeFiles/reopen.dir
   OBJECT_FILE_DIR = vendor/glfw/tests/CMakeFiles/reopen.dir/__/deps
+  TARGET_COMPILE_PDB = vendor/glfw/tests/CMakeFiles/reopen.dir/
+  TARGET_PDB = vendor/glfw/tests/reopen.pdb
 
 
 # =============================================================================
@@ -1251,8 +1397,9 @@ build vendor/glfw/tests/reopen: C_EXECUTABLE_LINKER__reopen_Debug vendor/glfw/te
   OBJECT_DIR = vendor/glfw/tests/CMakeFiles/reopen.dir
   POST_BUILD = :
   PRE_LINK = :
+  TARGET_COMPILE_PDB = vendor/glfw/tests/CMakeFiles/reopen.dir/
   TARGET_FILE = vendor/glfw/tests/reopen
-  TARGET_PDB = reopen.dbg
+  TARGET_PDB = vendor/glfw/tests/reopen.pdb
 
 # =============================================================================
 # Object build statements for EXECUTABLE target cursor
@@ -1269,6 +1416,8 @@ build vendor/glfw/tests/CMakeFiles/cursor.dir/cursor.c.o: C_COMPILER__cursor_uns
   INCLUDES = -I/home/double-dev/Projects/Hackathon/vendor/glfw/deps -I/home/double-dev/Projects/Hackathon/vendor/glfw/include
   OBJECT_DIR = vendor/glfw/tests/CMakeFiles/cursor.dir
   OBJECT_FILE_DIR = vendor/glfw/tests/CMakeFiles/cursor.dir
+  TARGET_COMPILE_PDB = vendor/glfw/tests/CMakeFiles/cursor.dir/
+  TARGET_PDB = vendor/glfw/tests/cursor.pdb
 
 build vendor/glfw/tests/CMakeFiles/cursor.dir/__/deps/glad_gl.c.o: C_COMPILER__cursor_unscanned_Debug /home/double-dev/Projects/Hackathon/vendor/glfw/deps/glad_gl.c || cmake_object_order_depends_target_cursor
   DEP_FILE = vendor/glfw/tests/CMakeFiles/cursor.dir/__/deps/glad_gl.c.o.d
@@ -1276,6 +1425,8 @@ build vendor/glfw/tests/CMakeFiles/cursor.dir/__/deps/glad_gl.c.o: C_COMPILER__c
   INCLUDES = -I/home/double-dev/Projects/Hackathon/vendor/glfw/deps -I/home/double-dev/Projects/Hackathon/vendor/glfw/include
   OBJECT_DIR = vendor/glfw/tests/CMakeFiles/cursor.dir
   OBJECT_FILE_DIR = vendor/glfw/tests/CMakeFiles/cursor.dir/__/deps
+  TARGET_COMPILE_PDB = vendor/glfw/tests/CMakeFiles/cursor.dir/
+  TARGET_PDB = vendor/glfw/tests/cursor.pdb
 
 
 # =============================================================================
@@ -1291,8 +1442,9 @@ build vendor/glfw/tests/cursor: C_EXECUTABLE_LINKER__cursor_Debug vendor/glfw/te
   OBJECT_DIR = vendor/glfw/tests/CMakeFiles/cursor.dir
   POST_BUILD = :
   PRE_LINK = :
+  TARGET_COMPILE_PDB = vendor/glfw/tests/CMakeFiles/cursor.dir/
   TARGET_FILE = vendor/glfw/tests/cursor
-  TARGET_PDB = cursor.dbg
+  TARGET_PDB = vendor/glfw/tests/cursor.pdb
 
 # =============================================================================
 # Object build statements for EXECUTABLE target empty
@@ -1309,6 +1461,8 @@ build vendor/glfw/tests/CMakeFiles/empty.dir/empty.c.o: C_COMPILER__empty_unscan
   INCLUDES = -I/home/double-dev/Projects/Hackathon/vendor/glfw/deps -I/home/double-dev/Projects/Hackathon/vendor/glfw/include
   OBJECT_DIR = vendor/glfw/tests/CMakeFiles/empty.dir
   OBJECT_FILE_DIR = vendor/glfw/tests/CMakeFiles/empty.dir
+  TARGET_COMPILE_PDB = vendor/glfw/tests/CMakeFiles/empty.dir/
+  TARGET_PDB = vendor/glfw/tests/empty.pdb
 
 build vendor/glfw/tests/CMakeFiles/empty.dir/__/deps/tinycthread.c.o: C_COMPILER__empty_unscanned_Debug /home/double-dev/Projects/Hackathon/vendor/glfw/deps/tinycthread.c || cmake_object_order_depends_target_empty
   DEP_FILE = vendor/glfw/tests/CMakeFiles/empty.dir/__/deps/tinycthread.c.o.d
@@ -1316,6 +1470,8 @@ build vendor/glfw/tests/CMakeFiles/empty.dir/__/deps/tinycthread.c.o: C_COMPILER
   INCLUDES = -I/home/double-dev/Projects/Hackathon/vendor/glfw/deps -I/home/double-dev/Projects/Hackathon/vendor/glfw/include
   OBJECT_DIR = vendor/glfw/tests/CMakeFiles/empty.dir
   OBJECT_FILE_DIR = vendor/glfw/tests/CMakeFiles/empty.dir/__/deps
+  TARGET_COMPILE_PDB = vendor/glfw/tests/CMakeFiles/empty.dir/
+  TARGET_PDB = vendor/glfw/tests/empty.pdb
 
 build vendor/glfw/tests/CMakeFiles/empty.dir/__/deps/glad_gl.c.o: C_COMPILER__empty_unscanned_Debug /home/double-dev/Projects/Hackathon/vendor/glfw/deps/glad_gl.c || cmake_object_order_depends_target_empty
   DEP_FILE = vendor/glfw/tests/CMakeFiles/empty.dir/__/deps/glad_gl.c.o.d
@@ -1323,6 +1479,8 @@ build vendor/glfw/tests/CMakeFiles/empty.dir/__/deps/glad_gl.c.o: C_COMPILER__em
   INCLUDES = -I/home/double-dev/Projects/Hackathon/vendor/glfw/deps -I/home/double-dev/Projects/Hackathon/vendor/glfw/include
   OBJECT_DIR = vendor/glfw/tests/CMakeFiles/empty.dir
   OBJECT_FILE_DIR = vendor/glfw/tests/CMakeFiles/empty.dir/__/deps
+  TARGET_COMPILE_PDB = vendor/glfw/tests/CMakeFiles/empty.dir/
+  TARGET_PDB = vendor/glfw/tests/empty.pdb
 
 
 # =============================================================================
@@ -1338,8 +1496,9 @@ build vendor/glfw/tests/empty: C_EXECUTABLE_LINKER__empty_Debug vendor/glfw/test
   OBJECT_DIR = vendor/glfw/tests/CMakeFiles/empty.dir
   POST_BUILD = :
   PRE_LINK = :
+  TARGET_COMPILE_PDB = vendor/glfw/tests/CMakeFiles/empty.dir/
   TARGET_FILE = vendor/glfw/tests/empty
-  TARGET_PDB = empty.dbg
+  TARGET_PDB = vendor/glfw/tests/empty.pdb
 
 # =============================================================================
 # Object build statements for EXECUTABLE target gamma
@@ -1356,6 +1515,8 @@ build vendor/glfw/tests/CMakeFiles/gamma.dir/gamma.c.o: C_COMPILER__gamma_unscan
   INCLUDES = -I/home/double-dev/Projects/Hackathon/vendor/glfw/deps -I/home/double-dev/Projects/Hackathon/vendor/glfw/include
   OBJECT_DIR = vendor/glfw/tests/CMakeFiles/gamma.dir
   OBJECT_FILE_DIR = vendor/glfw/tests/CMakeFiles/gamma.dir
+  TARGET_COMPILE_PDB = vendor/glfw/tests/CMakeFiles/gamma.dir/
+  TARGET_PDB = vendor/glfw/tests/gamma.pdb
 
 build vendor/glfw/tests/CMakeFiles/gamma.dir/__/deps/glad_gl.c.o: C_COMPILER__gamma_unscanned_Debug /home/double-dev/Projects/Hackathon/vendor/glfw/deps/glad_gl.c || cmake_object_order_depends_target_gamma
   DEP_FILE = vendor/glfw/tests/CMakeFiles/gamma.dir/__/deps/glad_gl.c.o.d
@@ -1363,6 +1524,8 @@ build vendor/glfw/tests/CMakeFiles/gamma.dir/__/deps/glad_gl.c.o: C_COMPILER__ga
   INCLUDES = -I/home/double-dev/Projects/Hackathon/vendor/glfw/deps -I/home/double-dev/Projects/Hackathon/vendor/glfw/include
   OBJECT_DIR = vendor/glfw/tests/CMakeFiles/gamma.dir
   OBJECT_FILE_DIR = vendor/glfw/tests/CMakeFiles/gamma.dir/__/deps
+  TARGET_COMPILE_PDB = vendor/glfw/tests/CMakeFiles/gamma.dir/
+  TARGET_PDB = vendor/glfw/tests/gamma.pdb
 
 
 # =============================================================================
@@ -1378,8 +1541,9 @@ build vendor/glfw/tests/gamma: C_EXECUTABLE_LINKER__gamma_Debug vendor/glfw/test
   OBJECT_DIR = vendor/glfw/tests/CMakeFiles/gamma.dir
   POST_BUILD = :
   PRE_LINK = :
+  TARGET_COMPILE_PDB = vendor/glfw/tests/CMakeFiles/gamma.dir/
   TARGET_FILE = vendor/glfw/tests/gamma
-  TARGET_PDB = gamma.dbg
+  TARGET_PDB = vendor/glfw/tests/gamma.pdb
 
 # =============================================================================
 # Object build statements for EXECUTABLE target icon
@@ -1396,6 +1560,8 @@ build vendor/glfw/tests/CMakeFiles/icon.dir/icon.c.o: C_COMPILER__icon_unscanned
   INCLUDES = -I/home/double-dev/Projects/Hackathon/vendor/glfw/deps -I/home/double-dev/Projects/Hackathon/vendor/glfw/include
   OBJECT_DIR = vendor/glfw/tests/CMakeFiles/icon.dir
   OBJECT_FILE_DIR = vendor/glfw/tests/CMakeFiles/icon.dir
+  TARGET_COMPILE_PDB = vendor/glfw/tests/CMakeFiles/icon.dir/
+  TARGET_PDB = vendor/glfw/tests/icon.pdb
 
 build vendor/glfw/tests/CMakeFiles/icon.dir/__/deps/glad_gl.c.o: C_COMPILER__icon_unscanned_Debug /home/double-dev/Projects/Hackathon/vendor/glfw/deps/glad_gl.c || cmake_object_order_depends_target_icon
   DEP_FILE = vendor/glfw/tests/CMakeFiles/icon.dir/__/deps/glad_gl.c.o.d
@@ -1403,6 +1569,8 @@ build vendor/glfw/tests/CMakeFiles/icon.dir/__/deps/glad_gl.c.o: C_COMPILER__ico
   INCLUDES = -I/home/double-dev/Projects/Hackathon/vendor/glfw/deps -I/home/double-dev/Projects/Hackathon/vendor/glfw/include
   OBJECT_DIR = vendor/glfw/tests/CMakeFiles/icon.dir
   OBJECT_FILE_DIR = vendor/glfw/tests/CMakeFiles/icon.dir/__/deps
+  TARGET_COMPILE_PDB = vendor/glfw/tests/CMakeFiles/icon.dir/
+  TARGET_PDB = vendor/glfw/tests/icon.pdb
 
 
 # =============================================================================
@@ -1418,8 +1586,9 @@ build vendor/glfw/tests/icon: C_EXECUTABLE_LINKER__icon_Debug vendor/glfw/tests/
   OBJECT_DIR = vendor/glfw/tests/CMakeFiles/icon.dir
   POST_BUILD = :
   PRE_LINK = :
+  TARGET_COMPILE_PDB = vendor/glfw/tests/CMakeFiles/icon.dir/
   TARGET_FILE = vendor/glfw/tests/icon
-  TARGET_PDB = icon.dbg
+  TARGET_PDB = vendor/glfw/tests/icon.pdb
 
 # =============================================================================
 # Object build statements for EXECUTABLE target inputlag
@@ -1436,6 +1605,8 @@ build vendor/glfw/tests/CMakeFiles/inputlag.dir/inputlag.c.o: C_COMPILER__inputl
   INCLUDES = -I/home/double-dev/Projects/Hackathon/vendor/glfw/deps -I/home/double-dev/Projects/Hackathon/vendor/glfw/include
   OBJECT_DIR = vendor/glfw/tests/CMakeFiles/inputlag.dir
   OBJECT_FILE_DIR = vendor/glfw/tests/CMakeFiles/inputlag.dir
+  TARGET_COMPILE_PDB = vendor/glfw/tests/CMakeFiles/inputlag.dir/
+  TARGET_PDB = vendor/glfw/tests/inputlag.pdb
 
 build vendor/glfw/tests/CMakeFiles/inputlag.dir/__/deps/getopt.c.o: C_COMPILER__inputlag_unscanned_Debug /home/double-dev/Projects/Hackathon/vendor/glfw/deps/getopt.c || cmake_object_order_depends_target_inputlag
   DEP_FILE = vendor/glfw/tests/CMakeFiles/inputlag.dir/__/deps/getopt.c.o.d
@@ -1443,6 +1614,8 @@ build vendor/glfw/tests/CMakeFiles/inputlag.dir/__/deps/getopt.c.o: C_COMPILER__
   INCLUDES = -I/home/double-dev/Projects/Hackathon/vendor/glfw/deps -I/home/double-dev/Projects/Hackathon/vendor/glfw/include
   OBJECT_DIR = vendor/glfw/tests/CMakeFiles/inputlag.dir
   OBJECT_FILE_DIR = vendor/glfw/tests/CMakeFiles/inputlag.dir/__/deps
+  TARGET_COMPILE_PDB = vendor/glfw/tests/CMakeFiles/inputlag.dir/
+  TARGET_PDB = vendor/glfw/tests/inputlag.pdb
 
 build vendor/glfw/tests/CMakeFiles/inputlag.dir/__/deps/glad_gl.c.o: C_COMPILER__inputlag_unscanned_Debug /home/double-dev/Projects/Hackathon/vendor/glfw/deps/glad_gl.c || cmake_object_order_depends_target_inputlag
   DEP_FILE = vendor/glfw/tests/CMakeFiles/inputlag.dir/__/deps/glad_gl.c.o.d
@@ -1450,6 +1623,8 @@ build vendor/glfw/tests/CMakeFiles/inputlag.dir/__/deps/glad_gl.c.o: C_COMPILER_
   INCLUDES = -I/home/double-dev/Projects/Hackathon/vendor/glfw/deps -I/home/double-dev/Projects/Hackathon/vendor/glfw/include
   OBJECT_DIR = vendor/glfw/tests/CMakeFiles/inputlag.dir
   OBJECT_FILE_DIR = vendor/glfw/tests/CMakeFiles/inputlag.dir/__/deps
+  TARGET_COMPILE_PDB = vendor/glfw/tests/CMakeFiles/inputlag.dir/
+  TARGET_PDB = vendor/glfw/tests/inputlag.pdb
 
 
 # =============================================================================
@@ -1465,8 +1640,9 @@ build vendor/glfw/tests/inputlag: C_EXECUTABLE_LINKER__inputlag_Debug vendor/glf
   OBJECT_DIR = vendor/glfw/tests/CMakeFiles/inputlag.dir
   POST_BUILD = :
   PRE_LINK = :
+  TARGET_COMPILE_PDB = vendor/glfw/tests/CMakeFiles/inputlag.dir/
   TARGET_FILE = vendor/glfw/tests/inputlag
-  TARGET_PDB = inputlag.dbg
+  TARGET_PDB = vendor/glfw/tests/inputlag.pdb
 
 # =============================================================================
 # Object build statements for EXECUTABLE target joysticks
@@ -1483,6 +1659,8 @@ build vendor/glfw/tests/CMakeFiles/joysticks.dir/joysticks.c.o: C_COMPILER__joys
   INCLUDES = -I/home/double-dev/Projects/Hackathon/vendor/glfw/deps -I/home/double-dev/Projects/Hackathon/vendor/glfw/include
   OBJECT_DIR = vendor/glfw/tests/CMakeFiles/joysticks.dir
   OBJECT_FILE_DIR = vendor/glfw/tests/CMakeFiles/joysticks.dir
+  TARGET_COMPILE_PDB = vendor/glfw/tests/CMakeFiles/joysticks.dir/
+  TARGET_PDB = vendor/glfw/tests/joysticks.pdb
 
 build vendor/glfw/tests/CMakeFiles/joysticks.dir/__/deps/glad_gl.c.o: C_COMPILER__joysticks_unscanned_Debug /home/double-dev/Projects/Hackathon/vendor/glfw/deps/glad_gl.c || cmake_object_order_depends_target_joysticks
   DEP_FILE = vendor/glfw/tests/CMakeFiles/joysticks.dir/__/deps/glad_gl.c.o.d
@@ -1490,6 +1668,8 @@ build vendor/glfw/tests/CMakeFiles/joysticks.dir/__/deps/glad_gl.c.o: C_COMPILER
   INCLUDES = -I/home/double-dev/Projects/Hackathon/vendor/glfw/deps -I/home/double-dev/Projects/Hackathon/vendor/glfw/include
   OBJECT_DIR = vendor/glfw/tests/CMakeFiles/joysticks.dir
   OBJECT_FILE_DIR = vendor/glfw/tests/CMakeFiles/joysticks.dir/__/deps
+  TARGET_COMPILE_PDB = vendor/glfw/tests/CMakeFiles/joysticks.dir/
+  TARGET_PDB = vendor/glfw/tests/joysticks.pdb
 
 
 # =============================================================================
@@ -1505,8 +1685,9 @@ build vendor/glfw/tests/joysticks: C_EXECUTABLE_LINKER__joysticks_Debug vendor/g
   OBJECT_DIR = vendor/glfw/tests/CMakeFiles/joysticks.dir
   POST_BUILD = :
   PRE_LINK = :
+  TARGET_COMPILE_PDB = vendor/glfw/tests/CMakeFiles/joysticks.dir/
   TARGET_FILE = vendor/glfw/tests/joysticks
-  TARGET_PDB = joysticks.dbg
+  TARGET_PDB = vendor/glfw/tests/joysticks.pdb
 
 # =============================================================================
 # Object build statements for EXECUTABLE target opacity
@@ -1523,6 +1704,8 @@ build vendor/glfw/tests/CMakeFiles/opacity.dir/opacity.c.o: C_COMPILER__opacity_
   INCLUDES = -I/home/double-dev/Projects/Hackathon/vendor/glfw/deps -I/home/double-dev/Projects/Hackathon/vendor/glfw/include
   OBJECT_DIR = vendor/glfw/tests/CMakeFiles/opacity.dir
   OBJECT_FILE_DIR = vendor/glfw/tests/CMakeFiles/opacity.dir
+  TARGET_COMPILE_PDB = vendor/glfw/tests/CMakeFiles/opacity.dir/
+  TARGET_PDB = vendor/glfw/tests/opacity.pdb
 
 build vendor/glfw/tests/CMakeFiles/opacity.dir/__/deps/glad_gl.c.o: C_COMPILER__opacity_unscanned_Debug /home/double-dev/Projects/Hackathon/vendor/glfw/deps/glad_gl.c || cmake_object_order_depends_target_opacity
   DEP_FILE = vendor/glfw/tests/CMakeFiles/opacity.dir/__/deps/glad_gl.c.o.d
@@ -1530,6 +1713,8 @@ build vendor/glfw/tests/CMakeFiles/opacity.dir/__/deps/glad_gl.c.o: C_COMPILER__
   INCLUDES = -I/home/double-dev/Projects/Hackathon/vendor/glfw/deps -I/home/double-dev/Projects/Hackathon/vendor/glfw/include
   OBJECT_DIR = vendor/glfw/tests/CMakeFiles/opacity.dir
   OBJECT_FILE_DIR = vendor/glfw/tests/CMakeFiles/opacity.dir/__/deps
+  TARGET_COMPILE_PDB = vendor/glfw/tests/CMakeFiles/opacity.dir/
+  TARGET_PDB = vendor/glfw/tests/opacity.pdb
 
 
 # =============================================================================
@@ -1545,8 +1730,9 @@ build vendor/glfw/tests/opacity: C_EXECUTABLE_LINKER__opacity_Debug vendor/glfw/
   OBJECT_DIR = vendor/glfw/tests/CMakeFiles/opacity.dir
   POST_BUILD = :
   PRE_LINK = :
+  TARGET_COMPILE_PDB = vendor/glfw/tests/CMakeFiles/opacity.dir/
   TARGET_FILE = vendor/glfw/tests/opacity
-  TARGET_PDB = opacity.dbg
+  TARGET_PDB = vendor/glfw/tests/opacity.pdb
 
 # =============================================================================
 # Object build statements for EXECUTABLE target tearing
@@ -1563,6 +1749,8 @@ build vendor/glfw/tests/CMakeFiles/tearing.dir/tearing.c.o: C_COMPILER__tearing_
   INCLUDES = -I/home/double-dev/Projects/Hackathon/vendor/glfw/deps -I/home/double-dev/Projects/Hackathon/vendor/glfw/include
   OBJECT_DIR = vendor/glfw/tests/CMakeFiles/tearing.dir
   OBJECT_FILE_DIR = vendor/glfw/tests/CMakeFiles/tearing.dir
+  TARGET_COMPILE_PDB = vendor/glfw/tests/CMakeFiles/tearing.dir/
+  TARGET_PDB = vendor/glfw/tests/tearing.pdb
 
 build vendor/glfw/tests/CMakeFiles/tearing.dir/__/deps/glad_gl.c.o: C_COMPILER__tearing_unscanned_Debug /home/double-dev/Projects/Hackathon/vendor/glfw/deps/glad_gl.c || cmake_object_order_depends_target_tearing
   DEP_FILE = vendor/glfw/tests/CMakeFiles/tearing.dir/__/deps/glad_gl.c.o.d
@@ -1570,6 +1758,8 @@ build vendor/glfw/tests/CMakeFiles/tearing.dir/__/deps/glad_gl.c.o: C_COMPILER__
   INCLUDES = -I/home/double-dev/Projects/Hackathon/vendor/glfw/deps -I/home/double-dev/Projects/Hackathon/vendor/glfw/include
   OBJECT_DIR = vendor/glfw/tests/CMakeFiles/tearing.dir
   OBJECT_FILE_DIR = vendor/glfw/tests/CMakeFiles/tearing.dir/__/deps
+  TARGET_COMPILE_PDB = vendor/glfw/tests/CMakeFiles/tearing.dir/
+  TARGET_PDB = vendor/glfw/tests/tearing.pdb
 
 
 # =============================================================================
@@ -1585,8 +1775,9 @@ build vendor/glfw/tests/tearing: C_EXECUTABLE_LINKER__tearing_Debug vendor/glfw/
   OBJECT_DIR = vendor/glfw/tests/CMakeFiles/tearing.dir
   POST_BUILD = :
   PRE_LINK = :
+  TARGET_COMPILE_PDB = vendor/glfw/tests/CMakeFiles/tearing.dir/
   TARGET_FILE = vendor/glfw/tests/tearing
-  TARGET_PDB = tearing.dbg
+  TARGET_PDB = vendor/glfw/tests/tearing.pdb
 
 # =============================================================================
 # Object build statements for EXECUTABLE target threads
@@ -1603,6 +1794,8 @@ build vendor/glfw/tests/CMakeFiles/threads.dir/threads.c.o: C_COMPILER__threads_
   INCLUDES = -I/home/double-dev/Projects/Hackathon/vendor/glfw/deps -I/home/double-dev/Projects/Hackathon/vendor/glfw/include
   OBJECT_DIR = vendor/glfw/tests/CMakeFiles/threads.dir
   OBJECT_FILE_DIR = vendor/glfw/tests/CMakeFiles/threads.dir
+  TARGET_COMPILE_PDB = vendor/glfw/tests/CMakeFiles/threads.dir/
+  TARGET_PDB = vendor/glfw/tests/threads.pdb
 
 build vendor/glfw/tests/CMakeFiles/threads.dir/__/deps/tinycthread.c.o: C_COMPILER__threads_unscanned_Debug /home/double-dev/Projects/Hackathon/vendor/glfw/deps/tinycthread.c || cmake_object_order_depends_target_threads
   DEP_FILE = vendor/glfw/tests/CMakeFiles/threads.dir/__/deps/tinycthread.c.o.d
@@ -1610,6 +1803,8 @@ build vendor/glfw/tests/CMakeFiles/threads.dir/__/deps/tinycthread.c.o: C_COMPIL
   INCLUDES = -I/home/double-dev/Projects/Hackathon/vendor/glfw/deps -I/home/double-dev/Projects/Hackathon/vendor/glfw/include
   OBJECT_DIR = vendor/glfw/tests/CMakeFiles/threads.dir
   OBJECT_FILE_DIR = vendor/glfw/tests/CMakeFiles/threads.dir/__/deps
+  TARGET_COMPILE_PDB = vendor/glfw/tests/CMakeFiles/threads.dir/
+  TARGET_PDB = vendor/glfw/tests/threads.pdb
 
 build vendor/glfw/tests/CMakeFiles/threads.dir/__/deps/glad_gl.c.o: C_COMPILER__threads_unscanned_Debug /home/double-dev/Projects/Hackathon/vendor/glfw/deps/glad_gl.c || cmake_object_order_depends_target_threads
   DEP_FILE = vendor/glfw/tests/CMakeFiles/threads.dir/__/deps/glad_gl.c.o.d
@@ -1617,6 +1812,8 @@ build vendor/glfw/tests/CMakeFiles/threads.dir/__/deps/glad_gl.c.o: C_COMPILER__
   INCLUDES = -I/home/double-dev/Projects/Hackathon/vendor/glfw/deps -I/home/double-dev/Projects/Hackathon/vendor/glfw/include
   OBJECT_DIR = vendor/glfw/tests/CMakeFiles/threads.dir
   OBJECT_FILE_DIR = vendor/glfw/tests/CMakeFiles/threads.dir/__/deps
+  TARGET_COMPILE_PDB = vendor/glfw/tests/CMakeFiles/threads.dir/
+  TARGET_PDB = vendor/glfw/tests/threads.pdb
 
 
 # =============================================================================
@@ -1632,8 +1829,9 @@ build vendor/glfw/tests/threads: C_EXECUTABLE_LINKER__threads_Debug vendor/glfw/
   OBJECT_DIR = vendor/glfw/tests/CMakeFiles/threads.dir
   POST_BUILD = :
   PRE_LINK = :
+  TARGET_COMPILE_PDB = vendor/glfw/tests/CMakeFiles/threads.dir/
   TARGET_FILE = vendor/glfw/tests/threads
-  TARGET_PDB = threads.dbg
+  TARGET_PDB = vendor/glfw/tests/threads.pdb
 
 # =============================================================================
 # Object build statements for EXECUTABLE target timeout
@@ -1650,6 +1848,8 @@ build vendor/glfw/tests/CMakeFiles/timeout.dir/timeout.c.o: C_COMPILER__timeout_
   INCLUDES = -I/home/double-dev/Projects/Hackathon/vendor/glfw/deps -I/home/double-dev/Projects/Hackathon/vendor/glfw/include
   OBJECT_DIR = vendor/glfw/tests/CMakeFiles/timeout.dir
   OBJECT_FILE_DIR = vendor/glfw/tests/CMakeFiles/timeout.dir
+  TARGET_COMPILE_PDB = vendor/glfw/tests/CMakeFiles/timeout.dir/
+  TARGET_PDB = vendor/glfw/tests/timeout.pdb
 
 build vendor/glfw/tests/CMakeFiles/timeout.dir/__/deps/glad_gl.c.o: C_COMPILER__timeout_unscanned_Debug /home/double-dev/Projects/Hackathon/vendor/glfw/deps/glad_gl.c || cmake_object_order_depends_target_timeout
   DEP_FILE = vendor/glfw/tests/CMakeFiles/timeout.dir/__/deps/glad_gl.c.o.d
@@ -1657,6 +1857,8 @@ build vendor/glfw/tests/CMakeFiles/timeout.dir/__/deps/glad_gl.c.o: C_COMPILER__
   INCLUDES = -I/home/double-dev/Projects/Hackathon/vendor/glfw/deps -I/home/double-dev/Projects/Hackathon/vendor/glfw/include
   OBJECT_DIR = vendor/glfw/tests/CMakeFiles/timeout.dir
   OBJECT_FILE_DIR = vendor/glfw/tests/CMakeFiles/timeout.dir/__/deps
+  TARGET_COMPILE_PDB = vendor/glfw/tests/CMakeFiles/timeout.dir/
+  TARGET_PDB = vendor/glfw/tests/timeout.pdb
 
 
 # =============================================================================
@@ -1672,8 +1874,9 @@ build vendor/glfw/tests/timeout: C_EXECUTABLE_LINKER__timeout_Debug vendor/glfw/
   OBJECT_DIR = vendor/glfw/tests/CMakeFiles/timeout.dir
   POST_BUILD = :
   PRE_LINK = :
+  TARGET_COMPILE_PDB = vendor/glfw/tests/CMakeFiles/timeout.dir/
   TARGET_FILE = vendor/glfw/tests/timeout
-  TARGET_PDB = timeout.dbg
+  TARGET_PDB = vendor/glfw/tests/timeout.pdb
 
 # =============================================================================
 # Object build statements for EXECUTABLE target title
@@ -1690,6 +1893,8 @@ build vendor/glfw/tests/CMakeFiles/title.dir/title.c.o: C_COMPILER__title_unscan
   INCLUDES = -I/home/double-dev/Projects/Hackathon/vendor/glfw/deps -I/home/double-dev/Projects/Hackathon/vendor/glfw/include
   OBJECT_DIR = vendor/glfw/tests/CMakeFiles/title.dir
   OBJECT_FILE_DIR = vendor/glfw/tests/CMakeFiles/title.dir
+  TARGET_COMPILE_PDB = vendor/glfw/tests/CMakeFiles/title.dir/
+  TARGET_PDB = vendor/glfw/tests/title.pdb
 
 build vendor/glfw/tests/CMakeFiles/title.dir/__/deps/glad_gl.c.o: C_COMPILER__title_unscanned_Debug /home/double-dev/Projects/Hackathon/vendor/glfw/deps/glad_gl.c || cmake_object_order_depends_target_title
   DEP_FILE = vendor/glfw/tests/CMakeFiles/title.dir/__/deps/glad_gl.c.o.d
@@ -1697,6 +1902,8 @@ build vendor/glfw/tests/CMakeFiles/title.dir/__/deps/glad_gl.c.o: C_COMPILER__ti
   INCLUDES = -I/home/double-dev/Projects/Hackathon/vendor/glfw/deps -I/home/double-dev/Projects/Hackathon/vendor/glfw/include
   OBJECT_DIR = vendor/glfw/tests/CMakeFiles/title.dir
   OBJECT_FILE_DIR = vendor/glfw/tests/CMakeFiles/title.dir/__/deps
+  TARGET_COMPILE_PDB = vendor/glfw/tests/CMakeFiles/title.dir/
+  TARGET_PDB = vendor/glfw/tests/title.pdb
 
 
 # =============================================================================
@@ -1712,8 +1919,9 @@ build vendor/glfw/tests/title: C_EXECUTABLE_LINKER__title_Debug vendor/glfw/test
   OBJECT_DIR = vendor/glfw/tests/CMakeFiles/title.dir
   POST_BUILD = :
   PRE_LINK = :
+  TARGET_COMPILE_PDB = vendor/glfw/tests/CMakeFiles/title.dir/
   TARGET_FILE = vendor/glfw/tests/title
-  TARGET_PDB = title.dbg
+  TARGET_PDB = vendor/glfw/tests/title.pdb
 
 # =============================================================================
 # Object build statements for EXECUTABLE target triangle-vulkan
@@ -1730,6 +1938,8 @@ build vendor/glfw/tests/CMakeFiles/triangle-vulkan.dir/triangle-vulkan.c.o: C_CO
   INCLUDES = -I/home/double-dev/Projects/Hackathon/vendor/glfw/deps -I/home/double-dev/Projects/Hackathon/vendor/glfw/include
   OBJECT_DIR = vendor/glfw/tests/CMakeFiles/triangle-vulkan.dir
   OBJECT_FILE_DIR = vendor/glfw/tests/CMakeFiles/triangle-vulkan.dir
+  TARGET_COMPILE_PDB = vendor/glfw/tests/CMakeFiles/triangle-vulkan.dir/
+  TARGET_PDB = vendor/glfw/tests/triangle-vulkan.pdb
 
 build vendor/glfw/tests/CMakeFiles/triangle-vulkan.dir/__/deps/glad_vulkan.c.o: C_COMPILER__triangle-vulkan_unscanned_Debug /home/double-dev/Projects/Hackathon/vendor/glfw/deps/glad_vulkan.c || cmake_object_order_depends_target_triangle-vulkan
   DEP_FILE = vendor/glfw/tests/CMakeFiles/triangle-vulkan.dir/__/deps/glad_vulkan.c.o.d
@@ -1737,6 +1947,8 @@ build vendor/glfw/tests/CMakeFiles/triangle-vulkan.dir/__/deps/glad_vulkan.c.o: 
   INCLUDES = -I/home/double-dev/Projects/Hackathon/vendor/glfw/deps -I/home/double-dev/Projects/Hackathon/vendor/glfw/include
   OBJECT_DIR = vendor/glfw/tests/CMakeFiles/triangle-vulkan.dir
   OBJECT_FILE_DIR = vendor/glfw/tests/CMakeFiles/triangle-vulkan.dir/__/deps
+  TARGET_COMPILE_PDB = vendor/glfw/tests/CMakeFiles/triangle-vulkan.dir/
+  TARGET_PDB = vendor/glfw/tests/triangle-vulkan.pdb
 
 
 # =============================================================================
@@ -1752,8 +1964,9 @@ build vendor/glfw/tests/triangle-vulkan: C_EXECUTABLE_LINKER__triangle-vulkan_De
   OBJECT_DIR = vendor/glfw/tests/CMakeFiles/triangle-vulkan.dir
   POST_BUILD = :
   PRE_LINK = :
+  TARGET_COMPILE_PDB = vendor/glfw/tests/CMakeFiles/triangle-vulkan.dir/
   TARGET_FILE = vendor/glfw/tests/triangle-vulkan
-  TARGET_PDB = triangle-vulkan.dbg
+  TARGET_PDB = vendor/glfw/tests/triangle-vulkan.pdb
 
 # =============================================================================
 # Object build statements for EXECUTABLE target windows
@@ -1770,6 +1983,8 @@ build vendor/glfw/tests/CMakeFiles/windows.dir/windows.c.o: C_COMPILER__windows_
   INCLUDES = -I/home/double-dev/Projects/Hackathon/vendor/glfw/deps -I/home/double-dev/Projects/Hackathon/vendor/glfw/include
   OBJECT_DIR = vendor/glfw/tests/CMakeFiles/windows.dir
   OBJECT_FILE_DIR = vendor/glfw/tests/CMakeFiles/windows.dir
+  TARGET_COMPILE_PDB = vendor/glfw/tests/CMakeFiles/windows.dir/
+  TARGET_PDB = vendor/glfw/tests/windows.pdb
 
 build vendor/glfw/tests/CMakeFiles/windows.dir/__/deps/getopt.c.o: C_COMPILER__windows_unscanned_Debug /home/double-dev/Projects/Hackathon/vendor/glfw/deps/getopt.c || cmake_object_order_depends_target_windows
   DEP_FILE = vendor/glfw/tests/CMakeFiles/windows.dir/__/deps/getopt.c.o.d
@@ -1777,6 +1992,8 @@ build vendor/glfw/tests/CMakeFiles/windows.dir/__/deps/getopt.c.o: C_COMPILER__w
   INCLUDES = -I/home/double-dev/Projects/Hackathon/vendor/glfw/deps -I/home/double-dev/Projects/Hackathon/vendor/glfw/include
   OBJECT_DIR = vendor/glfw/tests/CMakeFiles/windows.dir
   OBJECT_FILE_DIR = vendor/glfw/tests/CMakeFiles/windows.dir/__/deps
+  TARGET_COMPILE_PDB = vendor/glfw/tests/CMakeFiles/windows.dir/
+  TARGET_PDB = vendor/glfw/tests/windows.pdb
 
 build vendor/glfw/tests/CMakeFiles/windows.dir/__/deps/glad_gl.c.o: C_COMPILER__windows_unscanned_Debug /home/double-dev/Projects/Hackathon/vendor/glfw/deps/glad_gl.c || cmake_object_order_depends_target_windows
   DEP_FILE = vendor/glfw/tests/CMakeFiles/windows.dir/__/deps/glad_gl.c.o.d
@@ -1784,6 +2001,8 @@ build vendor/glfw/tests/CMakeFiles/windows.dir/__/deps/glad_gl.c.o: C_COMPILER__
   INCLUDES = -I/home/double-dev/Projects/Hackathon/vendor/glfw/deps -I/home/double-dev/Projects/Hackathon/vendor/glfw/include
   OBJECT_DIR = vendor/glfw/tests/CMakeFiles/windows.dir
   OBJECT_FILE_DIR = vendor/glfw/tests/CMakeFiles/windows.dir/__/deps
+  TARGET_COMPILE_PDB = vendor/glfw/tests/CMakeFiles/windows.dir/
+  TARGET_PDB = vendor/glfw/tests/windows.pdb
 
 
 # =============================================================================
@@ -1799,8 +2018,9 @@ build vendor/glfw/tests/windows: C_EXECUTABLE_LINKER__windows_Debug vendor/glfw/
   OBJECT_DIR = vendor/glfw/tests/CMakeFiles/windows.dir
   POST_BUILD = :
   PRE_LINK = :
+  TARGET_COMPILE_PDB = vendor/glfw/tests/CMakeFiles/windows.dir/
   TARGET_FILE = vendor/glfw/tests/windows
-  TARGET_PDB = windows.dbg
+  TARGET_PDB = vendor/glfw/tests/windows.pdb
 
 
 #############################################
@@ -1888,6 +2108,8 @@ build vendor/glad/CMakeFiles/glad.dir/src/glad.c.o: C_COMPILER__glad_unscanned_D
   INCLUDES = -I/home/double-dev/Projects/Hackathon/vendor/glad/include
   OBJECT_DIR = vendor/glad/CMakeFiles/glad.dir
   OBJECT_FILE_DIR = vendor/glad/CMakeFiles/glad.dir/src
+  TARGET_COMPILE_PDB = vendor/glad/CMakeFiles/glad.dir/glad.pdb
+  TARGET_PDB = vendor/glad/libglad.pdb
 
 
 # =============================================================================
@@ -1902,8 +2124,9 @@ build vendor/glad/libglad.a: C_STATIC_LIBRARY_LINKER__glad_Debug vendor/glad/CMa
   OBJECT_DIR = vendor/glad/CMakeFiles/glad.dir
   POST_BUILD = :
   PRE_LINK = :
+  TARGET_COMPILE_PDB = vendor/glad/CMakeFiles/glad.dir/glad.pdb
   TARGET_FILE = vendor/glad/libglad.a
-  TARGET_PDB = glad.a.dbg
+  TARGET_PDB = vendor/glad/libglad.pdb
 
 
 #############################################
@@ -1991,6 +2214,8 @@ build vendor/imgui/CMakeFiles/imgui.dir/imgui.cpp.o: CXX_COMPILER__imgui_unscann
   INCLUDES = -I/home/double-dev/Projects/Hackathon/vendor/imgui
   OBJECT_DIR = vendor/imgui/CMakeFiles/imgui.dir
   OBJECT_FILE_DIR = vendor/imgui/CMakeFiles/imgui.dir
+  TARGET_COMPILE_PDB = vendor/imgui/CMakeFiles/imgui.dir/imgui.pdb
+  TARGET_PDB = vendor/imgui/libimgui.pdb
 
 build vendor/imgui/CMakeFiles/imgui.dir/imgui_demo.cpp.o: CXX_COMPILER__imgui_unscanned_Debug /home/double-dev/Projects/Hackathon/vendor/imgui/imgui_demo.cpp || cmake_object_order_depends_target_imgui
   DEP_FILE = vendor/imgui/CMakeFiles/imgui.dir/imgui_demo.cpp.o.d
@@ -1998,6 +2223,8 @@ build vendor/imgui/CMakeFiles/imgui.dir/imgui_demo.cpp.o: CXX_COMPILER__imgui_un
   INCLUDES = -I/home/double-dev/Projects/Hackathon/vendor/imgui
   OBJECT_DIR = vendor/imgui/CMakeFiles/imgui.dir
   OBJECT_FILE_DIR = vendor/imgui/CMakeFiles/imgui.dir
+  TARGET_COMPILE_PDB = vendor/imgui/CMakeFiles/imgui.dir/imgui.pdb
+  TARGET_PDB = vendor/imgui/libimgui.pdb
 
 build vendor/imgui/CMakeFiles/imgui.dir/imgui_draw.cpp.o: CXX_COMPILER__imgui_unscanned_Debug /home/double-dev/Projects/Hackathon/vendor/imgui/imgui_draw.cpp || cmake_object_order_depends_target_imgui
   DEP_FILE = vendor/imgui/CMakeFiles/imgui.dir/imgui_draw.cpp.o.d
@@ -2005,6 +2232,8 @@ build vendor/imgui/CMakeFiles/imgui.dir/imgui_draw.cpp.o: CXX_COMPILER__imgui_un
   INCLUDES = -I/home/double-dev/Projects/Hackathon/vendor/imgui
   OBJECT_DIR = vendor/imgui/CMakeFiles/imgui.dir
   OBJECT_FILE_DIR = vendor/imgui/CMakeFiles/imgui.dir
+  TARGET_COMPILE_PDB = vendor/imgui/CMakeFiles/imgui.dir/imgui.pdb
+  TARGET_PDB = vendor/imgui/libimgui.pdb
 
 build vendor/imgui/CMakeFiles/imgui.dir/imgui_tables.cpp.o: CXX_COMPILER__imgui_unscanned_Debug /home/double-dev/Projects/Hackathon/vendor/imgui/imgui_tables.cpp || cmake_object_order_depends_target_imgui
   DEP_FILE = vendor/imgui/CMakeFiles/imgui.dir/imgui_tables.cpp.o.d
@@ -2012,6 +2241,8 @@ build vendor/imgui/CMakeFiles/imgui.dir/imgui_tables.cpp.o: CXX_COMPILER__imgui_
   INCLUDES = -I/home/double-dev/Projects/Hackathon/vendor/imgui
   OBJECT_DIR = vendor/imgui/CMakeFiles/imgui.dir
   OBJECT_FILE_DIR = vendor/imgui/CMakeFiles/imgui.dir
+  TARGET_COMPILE_PDB = vendor/imgui/CMakeFiles/imgui.dir/imgui.pdb
+  TARGET_PDB = vendor/imgui/libimgui.pdb
 
 build vendor/imgui/CMakeFiles/imgui.dir/imgui_widgets.cpp.o: CXX_COMPILER__imgui_unscanned_Debug /home/double-dev/Projects/Hackathon/vendor/imgui/imgui_widgets.cpp || cmake_object_order_depends_target_imgui
   DEP_FILE = vendor/imgui/CMakeFiles/imgui.dir/imgui_widgets.cpp.o.d
@@ -2019,6 +2250,8 @@ build vendor/imgui/CMakeFiles/imgui.dir/imgui_widgets.cpp.o: CXX_COMPILER__imgui
   INCLUDES = -I/home/double-dev/Projects/Hackathon/vendor/imgui
   OBJECT_DIR = vendor/imgui/CMakeFiles/imgui.dir
   OBJECT_FILE_DIR = vendor/imgui/CMakeFiles/imgui.dir
+  TARGET_COMPILE_PDB = vendor/imgui/CMakeFiles/imgui.dir/imgui.pdb
+  TARGET_PDB = vendor/imgui/libimgui.pdb
 
 
 # =============================================================================
@@ -2033,8 +2266,9 @@ build vendor/imgui/libimgui.a: CXX_STATIC_LIBRARY_LINKER__imgui_Debug vendor/img
   OBJECT_DIR = vendor/imgui/CMakeFiles/imgui.dir
   POST_BUILD = :
   PRE_LINK = :
+  TARGET_COMPILE_PDB = vendor/imgui/CMakeFiles/imgui.dir/imgui.pdb
   TARGET_FILE = vendor/imgui/libimgui.a
-  TARGET_PDB = imgui.a.dbg
+  TARGET_PDB = vendor/imgui/libimgui.pdb
 
 
 #############################################
@@ -2238,14 +2472,14 @@ build vendor/imgui/all: phony vendor/imgui/libimgui.a
 #############################################
 # Re-run CMake if any of its inputs changed.
 
-build build.ninja: RERUN_CMAKE | /home/double-dev/Projects/Hackathon/CMakeLists.txt /home/double-dev/Projects/Hackathon/vendor/glad/CMakeLists.txt /home/double-dev/Projects/Hackathon/vendor/glfw/CMakeLists.txt /home/double-dev/Projects/Hackathon/vendor/glfw/cmake_uninstall.cmake.in /home/double-dev/Projects/Hackathon/vendor/glfw/examples/CMakeLists.txt /home/double-dev/Projects/Hackathon/vendor/glfw/src/CMakeLists.txt /home/double-dev/Projects/Hackathon/vendor/glfw/src/glfw3.pc.in /home/double-dev/Projects/Hackathon/vendor/glfw/src/glfw3Config.cmake.in /home/double-dev/Projects/Hackathon/vendor/glfw/src/glfw_config.h.in /home/double-dev/Projects/Hackathon/vendor/glfw/tests/CMakeLists.txt /home/double-dev/Projects/Hackathon/vendor/imgui/CMakeLists.txt /usr/share/cmake/Modules/BasicConfigVersion-SameMajorVersion.cmake.in /usr/share/cmake/Modules/CMakeCInformation.cmake /usr/share/cmake/Modules/CMakeCXXInformation.cmake /usr/share/cmake/Modules/CMakeCommonLanguageInclude.cmake /usr/share/cmake/Modules/CMakeDependentOption.cmake /usr/share/cmake/Modules/CMakeGenericSystem.cmake /usr/share/cmake/Modules/CMakeInitializeConfigs.cmake /usr/share/cmake/Modules/CMakeLanguageInformation.cmake /usr/share/cmake/Modules/CMakePackageConfigHelpers.cmake /usr/share/cmake/Modules/CMakeSystemSpecificInformation.cmake /usr/share/cmake/Modules/CMakeSystemSpecificInitialize.cmake /usr/share/cmake/Modules/CheckCSourceCompiles.cmake /usr/share/cmake/Modules/CheckFunctionExists.cmake /usr/share/cmake/Modules/CheckIncludeFile.cmake /usr/share/cmake/Modules/CheckLibraryExists.cmake /usr/share/cmake/Modules/Compiler/CMakeCommonCompilerMacros.cmake /usr/share/cmake/Modules/Compiler/GNU-C.cmake /usr/share/cmake/Modules/Compiler/GNU-CXX.cmake /usr/share/cmake/Modules/Compiler/GNU.cmake /usr/share/cmake/Modules/FindDoxygen.cmake /usr/share/cmake/Modules/FindFontconfig.cmake /usr/share/cmake/Modules/FindFreetype.cmake /usr/share/cmake/Modules/FindPackageHandleStandardArgs.cmake /usr/share/cmake/Modules/FindPackageMessage.cmake /usr/share/cmake/Modules/FindPkgConfig.cmake /usr/share/cmake/Modules/FindThreads.cmake /usr/share/cmake/Modules/FindX11.cmake /usr/share/cmake/Modules/GNUInstallDirs.cmake /usr/share/cmake/Modules/Internal/CheckSourceCompiles.cmake /usr/share/cmake/Modules/Platform/Linux-GNU-C.cmake /usr/share/cmake/Modules/Platform/Linux-GNU-CXX.cmake /usr/share/cmake/Modules/Platform/Linux-GNU.cmake /usr/share/cmake/Modules/Platform/Linux-Initialize.cmake /usr/share/cmake/Modules/Platform/Linux.cmake /usr/share/cmake/Modules/Platform/UnixPaths.cmake /usr/share/cmake/Modules/SelectLibraryConfigurations.cmake /usr/share/cmake/Modules/WriteBasicConfigVersionFile.cmake CMakeCache.txt CMakeFiles/3.28.1/CMakeCCompiler.cmake CMakeFiles/3.28.1/CMakeCXXCompiler.cmake CMakeFiles/3.28.1/CMakeSystem.cmake
+build build.ninja: RERUN_CMAKE | /home/double-dev/Projects/Hackathon/CMakeLists.txt /home/double-dev/Projects/Hackathon/vendor/glad/CMakeLists.txt /home/double-dev/Projects/Hackathon/vendor/glfw/CMakeLists.txt /home/double-dev/Projects/Hackathon/vendor/glfw/cmake_uninstall.cmake.in /home/double-dev/Projects/Hackathon/vendor/glfw/examples/CMakeLists.txt /home/double-dev/Projects/Hackathon/vendor/glfw/src/CMakeLists.txt /home/double-dev/Projects/Hackathon/vendor/glfw/src/glfw3.pc.in /home/double-dev/Projects/Hackathon/vendor/glfw/src/glfw3Config.cmake.in /home/double-dev/Projects/Hackathon/vendor/glfw/src/glfw_config.h.in /home/double-dev/Projects/Hackathon/vendor/glfw/tests/CMakeLists.txt /home/double-dev/Projects/Hackathon/vendor/imgui/CMakeLists.txt /usr/share/cmake/Modules/BasicConfigVersion-SameMajorVersion.cmake.in /usr/share/cmake/Modules/CMakeCCompiler.cmake.in /usr/share/cmake/Modules/CMakeCCompilerABI.c /usr/share/cmake/Modules/CMakeCInformation.cmake /usr/share/cmake/Modules/CMakeCXXCompiler.cmake.in /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp /usr/share/cmake/Modules/CMakeCXXInformation.cmake /usr/share/cmake/Modules/CMakeCommonLanguageInclude.cmake /usr/share/cmake/Modules/CMakeCompilerIdDetection.cmake /usr/share/cmake/Modules/CMakeDependentOption.cmake /usr/share/cmake/Modules/CMakeDetermineCCompiler.cmake /usr/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake /usr/share/cmake/Modules/CMakeDetermineCompileFeatures.cmake /usr/share/cmake/Modules/CMakeDetermineCompiler.cmake /usr/share/cmake/Modules/CMakeDetermineCompilerABI.cmake /usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake /usr/share/cmake/Modules/CMakeDetermineSystem.cmake /usr/share/cmake/Modules/CMakeFindBinUtils.cmake /usr/share/cmake/Modules/CMakeGenericSystem.cmake /usr/share/cmake/Modules/CMakeInitializeConfigs.cmake /usr/share/cmake/Modules/CMakeLanguageInformation.cmake /usr/share/cmake/Modules/CMakeNinjaFindMake.cmake /usr/share/cmake/Modules/CMakePackageConfigHelpers.cmake /usr/share/cmake/Modules/CMakeParseImplicitIncludeInfo.cmake /usr/share/cmake/Modules/CMakeParseImplicitLinkInfo.cmake /usr/share/cmake/Modules/CMakeParseLibraryArchitecture.cmake /usr/share/cmake/Modules/CMakeSystem.cmake.in /usr/share/cmake/Modules/CMakeSystemSpecificInformation.cmake /usr/share/cmake/Modules/CMakeSystemSpecificInitialize.cmake /usr/share/cmake/Modules/CMakeTestCCompiler.cmake /usr/share/cmake/Modules/CMakeTestCXXCompiler.cmake /usr/share/cmake/Modules/CMakeTestCompilerCommon.cmake /usr/share/cmake/Modules/CheckCSourceCompiles.cmake /usr/share/cmake/Modules/CheckFunctionExists.cmake /usr/share/cmake/Modules/CheckIncludeFile.cmake /usr/share/cmake/Modules/CheckLibraryExists.cmake /usr/share/cmake/Modules/Compiler/ADSP-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/ARMCC-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/ARMClang-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/AppleClang-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/Borland-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/Bruce-C-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/CMakeCommonCompilerMacros.cmake /usr/share/cmake/Modules/Compiler/Clang-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/Clang-DetermineCompilerInternal.cmake /usr/share/cmake/Modules/Compiler/Comeau-CXX-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/Compaq-C-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/Compaq-CXX-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/Cray-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/CrayClang-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/Embarcadero-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/Fujitsu-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/FujitsuClang-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/GHS-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/GNU-C-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/GNU-C.cmake /usr/share/cmake/Modules/Compiler/GNU-CXX-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/GNU-CXX.cmake /usr/share/cmake/Modules/Compiler/GNU-FindBinUtils.cmake /usr/share/cmake/Modules/Compiler/GNU.cmake /usr/share/cmake/Modules/Compiler/HP-C-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/HP-CXX-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/IAR-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/IBMCPP-C-DetermineVersionInternal.cmake /usr/share/cmake/Modules/Compiler/IBMCPP-CXX-DetermineVersionInternal.cmake /usr/share/cmake/Modules/Compiler/IBMClang-C-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/IBMClang-CXX-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/Intel-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/IntelLLVM-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/LCC-C-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/LCC-CXX-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/MSVC-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/NVHPC-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/NVIDIA-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/OpenWatcom-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/OrangeC-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/PGI-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/PathScale-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/SCO-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/SDCC-C-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/SunPro-C-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/SunPro-CXX-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/TI-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/Tasking-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/TinyCC-C-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/VisualAge-C-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/VisualAge-CXX-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/Watcom-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/XL-C-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/XL-CXX-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/XLClang-C-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/XLClang-CXX-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/zOS-C-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/zOS-CXX-DetermineCompiler.cmake /usr/share/cmake/Modules/FindDoxygen.cmake /usr/share/cmake/Modules/FindFontconfig.cmake /usr/share/cmake/Modules/FindFreetype.cmake /usr/share/cmake/Modules/FindPackageHandleStandardArgs.cmake /usr/share/cmake/Modules/FindPackageMessage.cmake /usr/share/cmake/Modules/FindPkgConfig.cmake /usr/share/cmake/Modules/FindThreads.cmake /usr/share/cmake/Modules/FindX11.cmake /usr/share/cmake/Modules/GNUInstallDirs.cmake /usr/share/cmake/Modules/Internal/CheckSourceCompiles.cmake /usr/share/cmake/Modules/Internal/FeatureTesting.cmake /usr/share/cmake/Modules/Platform/Linux-Determine-CXX.cmake /usr/share/cmake/Modules/Platform/Linux-GNU-C.cmake /usr/share/cmake/Modules/Platform/Linux-GNU-CXX.cmake /usr/share/cmake/Modules/Platform/Linux-GNU.cmake /usr/share/cmake/Modules/Platform/Linux-Initialize.cmake /usr/share/cmake/Modules/Platform/Linux.cmake /usr/share/cmake/Modules/Platform/UnixPaths.cmake /usr/share/cmake/Modules/SelectLibraryConfigurations.cmake /usr/share/cmake/Modules/WriteBasicConfigVersionFile.cmake CMakeCache.txt CMakeFiles/3.28.1/CMakeCCompiler.cmake CMakeFiles/3.28.1/CMakeCXXCompiler.cmake CMakeFiles/3.28.1/CMakeSystem.cmake
   pool = console
 
 
 #############################################
 # A missing CMake input file is not an error.
 
-build /home/double-dev/Projects/Hackathon/CMakeLists.txt /home/double-dev/Projects/Hackathon/vendor/glad/CMakeLists.txt /home/double-dev/Projects/Hackathon/vendor/glfw/CMakeLists.txt /home/double-dev/Projects/Hackathon/vendor/glfw/cmake_uninstall.cmake.in /home/double-dev/Projects/Hackathon/vendor/glfw/examples/CMakeLists.txt /home/double-dev/Projects/Hackathon/vendor/glfw/src/CMakeLists.txt /home/double-dev/Projects/Hackathon/vendor/glfw/src/glfw3.pc.in /home/double-dev/Projects/Hackathon/vendor/glfw/src/glfw3Config.cmake.in /home/double-dev/Projects/Hackathon/vendor/glfw/src/glfw_config.h.in /home/double-dev/Projects/Hackathon/vendor/glfw/tests/CMakeLists.txt /home/double-dev/Projects/Hackathon/vendor/imgui/CMakeLists.txt /usr/share/cmake/Modules/BasicConfigVersion-SameMajorVersion.cmake.in /usr/share/cmake/Modules/CMakeCInformation.cmake /usr/share/cmake/Modules/CMakeCXXInformation.cmake /usr/share/cmake/Modules/CMakeCommonLanguageInclude.cmake /usr/share/cmake/Modules/CMakeDependentOption.cmake /usr/share/cmake/Modules/CMakeGenericSystem.cmake /usr/share/cmake/Modules/CMakeInitializeConfigs.cmake /usr/share/cmake/Modules/CMakeLanguageInformation.cmake /usr/share/cmake/Modules/CMakePackageConfigHelpers.cmake /usr/share/cmake/Modules/CMakeSystemSpecificInformation.cmake /usr/share/cmake/Modules/CMakeSystemSpecificInitialize.cmake /usr/share/cmake/Modules/CheckCSourceCompiles.cmake /usr/share/cmake/Modules/CheckFunctionExists.cmake /usr/share/cmake/Modules/CheckIncludeFile.cmake /usr/share/cmake/Modules/CheckLibraryExists.cmake /usr/share/cmake/Modules/Compiler/CMakeCommonCompilerMacros.cmake /usr/share/cmake/Modules/Compiler/GNU-C.cmake /usr/share/cmake/Modules/Compiler/GNU-CXX.cmake /usr/share/cmake/Modules/Compiler/GNU.cmake /usr/share/cmake/Modules/FindDoxygen.cmake /usr/share/cmake/Modules/FindFontconfig.cmake /usr/share/cmake/Modules/FindFreetype.cmake /usr/share/cmake/Modules/FindPackageHandleStandardArgs.cmake /usr/share/cmake/Modules/FindPackageMessage.cmake /usr/share/cmake/Modules/FindPkgConfig.cmake /usr/share/cmake/Modules/FindThreads.cmake /usr/share/cmake/Modules/FindX11.cmake /usr/share/cmake/Modules/GNUInstallDirs.cmake /usr/share/cmake/Modules/Internal/CheckSourceCompiles.cmake /usr/share/cmake/Modules/Platform/Linux-GNU-C.cmake /usr/share/cmake/Modules/Platform/Linux-GNU-CXX.cmake /usr/share/cmake/Modules/Platform/Linux-GNU.cmake /usr/share/cmake/Modules/Platform/Linux-Initialize.cmake /usr/share/cmake/Modules/Platform/Linux.cmake /usr/share/cmake/Modules/Platform/UnixPaths.cmake /usr/share/cmake/Modules/SelectLibraryConfigurations.cmake /usr/share/cmake/Modules/WriteBasicConfigVersionFile.cmake CMakeCache.txt CMakeFiles/3.28.1/CMakeCCompiler.cmake CMakeFiles/3.28.1/CMakeCXXCompiler.cmake CMakeFiles/3.28.1/CMakeSystem.cmake: phony
+build /home/double-dev/Projects/Hackathon/CMakeLists.txt /home/double-dev/Projects/Hackathon/vendor/glad/CMakeLists.txt /home/double-dev/Projects/Hackathon/vendor/glfw/CMakeLists.txt /home/double-dev/Projects/Hackathon/vendor/glfw/cmake_uninstall.cmake.in /home/double-dev/Projects/Hackathon/vendor/glfw/examples/CMakeLists.txt /home/double-dev/Projects/Hackathon/vendor/glfw/src/CMakeLists.txt /home/double-dev/Projects/Hackathon/vendor/glfw/src/glfw3.pc.in /home/double-dev/Projects/Hackathon/vendor/glfw/src/glfw3Config.cmake.in /home/double-dev/Projects/Hackathon/vendor/glfw/src/glfw_config.h.in /home/double-dev/Projects/Hackathon/vendor/glfw/tests/CMakeLists.txt /home/double-dev/Projects/Hackathon/vendor/imgui/CMakeLists.txt /usr/share/cmake/Modules/BasicConfigVersion-SameMajorVersion.cmake.in /usr/share/cmake/Modules/CMakeCCompiler.cmake.in /usr/share/cmake/Modules/CMakeCCompilerABI.c /usr/share/cmake/Modules/CMakeCInformation.cmake /usr/share/cmake/Modules/CMakeCXXCompiler.cmake.in /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp /usr/share/cmake/Modules/CMakeCXXInformation.cmake /usr/share/cmake/Modules/CMakeCommonLanguageInclude.cmake /usr/share/cmake/Modules/CMakeCompilerIdDetection.cmake /usr/share/cmake/Modules/CMakeDependentOption.cmake /usr/share/cmake/Modules/CMakeDetermineCCompiler.cmake /usr/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake /usr/share/cmake/Modules/CMakeDetermineCompileFeatures.cmake /usr/share/cmake/Modules/CMakeDetermineCompiler.cmake /usr/share/cmake/Modules/CMakeDetermineCompilerABI.cmake /usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake /usr/share/cmake/Modules/CMakeDetermineSystem.cmake /usr/share/cmake/Modules/CMakeFindBinUtils.cmake /usr/share/cmake/Modules/CMakeGenericSystem.cmake /usr/share/cmake/Modules/CMakeInitializeConfigs.cmake /usr/share/cmake/Modules/CMakeLanguageInformation.cmake /usr/share/cmake/Modules/CMakeNinjaFindMake.cmake /usr/share/cmake/Modules/CMakePackageConfigHelpers.cmake /usr/share/cmake/Modules/CMakeParseImplicitIncludeInfo.cmake /usr/share/cmake/Modules/CMakeParseImplicitLinkInfo.cmake /usr/share/cmake/Modules/CMakeParseLibraryArchitecture.cmake /usr/share/cmake/Modules/CMakeSystem.cmake.in /usr/share/cmake/Modules/CMakeSystemSpecificInformation.cmake /usr/share/cmake/Modules/CMakeSystemSpecificInitialize.cmake /usr/share/cmake/Modules/CMakeTestCCompiler.cmake /usr/share/cmake/Modules/CMakeTestCXXCompiler.cmake /usr/share/cmake/Modules/CMakeTestCompilerCommon.cmake /usr/share/cmake/Modules/CheckCSourceCompiles.cmake /usr/share/cmake/Modules/CheckFunctionExists.cmake /usr/share/cmake/Modules/CheckIncludeFile.cmake /usr/share/cmake/Modules/CheckLibraryExists.cmake /usr/share/cmake/Modules/Compiler/ADSP-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/ARMCC-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/ARMClang-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/AppleClang-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/Borland-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/Bruce-C-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/CMakeCommonCompilerMacros.cmake /usr/share/cmake/Modules/Compiler/Clang-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/Clang-DetermineCompilerInternal.cmake /usr/share/cmake/Modules/Compiler/Comeau-CXX-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/Compaq-C-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/Compaq-CXX-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/Cray-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/CrayClang-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/Embarcadero-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/Fujitsu-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/FujitsuClang-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/GHS-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/GNU-C-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/GNU-C.cmake /usr/share/cmake/Modules/Compiler/GNU-CXX-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/GNU-CXX.cmake /usr/share/cmake/Modules/Compiler/GNU-FindBinUtils.cmake /usr/share/cmake/Modules/Compiler/GNU.cmake /usr/share/cmake/Modules/Compiler/HP-C-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/HP-CXX-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/IAR-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/IBMCPP-C-DetermineVersionInternal.cmake /usr/share/cmake/Modules/Compiler/IBMCPP-CXX-DetermineVersionInternal.cmake /usr/share/cmake/Modules/Compiler/IBMClang-C-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/IBMClang-CXX-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/Intel-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/IntelLLVM-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/LCC-C-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/LCC-CXX-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/MSVC-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/NVHPC-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/NVIDIA-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/OpenWatcom-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/OrangeC-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/PGI-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/PathScale-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/SCO-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/SDCC-C-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/SunPro-C-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/SunPro-CXX-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/TI-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/Tasking-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/TinyCC-C-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/VisualAge-C-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/VisualAge-CXX-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/Watcom-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/XL-C-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/XL-CXX-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/XLClang-C-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/XLClang-CXX-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/zOS-C-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/zOS-CXX-DetermineCompiler.cmake /usr/share/cmake/Modules/FindDoxygen.cmake /usr/share/cmake/Modules/FindFontconfig.cmake /usr/share/cmake/Modules/FindFreetype.cmake /usr/share/cmake/Modules/FindPackageHandleStandardArgs.cmake /usr/share/cmake/Modules/FindPackageMessage.cmake /usr/share/cmake/Modules/FindPkgConfig.cmake /usr/share/cmake/Modules/FindThreads.cmake /usr/share/cmake/Modules/FindX11.cmake /usr/share/cmake/Modules/GNUInstallDirs.cmake /usr/share/cmake/Modules/Internal/CheckSourceCompiles.cmake /usr/share/cmake/Modules/Internal/FeatureTesting.cmake /usr/share/cmake/Modules/Platform/Linux-Determine-CXX.cmake /usr/share/cmake/Modules/Platform/Linux-GNU-C.cmake /usr/share/cmake/Modules/Platform/Linux-GNU-CXX.cmake /usr/share/cmake/Modules/Platform/Linux-GNU.cmake /usr/share/cmake/Modules/Platform/Linux-Initialize.cmake /usr/share/cmake/Modules/Platform/Linux.cmake /usr/share/cmake/Modules/Platform/UnixPaths.cmake /usr/share/cmake/Modules/SelectLibraryConfigurations.cmake /usr/share/cmake/Modules/WriteBasicConfigVersionFile.cmake CMakeCache.txt CMakeFiles/3.28.1/CMakeCCompiler.cmake CMakeFiles/3.28.1/CMakeCXXCompiler.cmake CMakeFiles/3.28.1/CMakeSystem.cmake: phony
 
 
 #############################################

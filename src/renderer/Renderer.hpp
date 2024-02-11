@@ -22,6 +22,8 @@ public:
     void DrawSprite(const Float3& position, const float rotation, const Float2& scale);
 
     void Render();
+    void BeginImGuiRender();
+    void EndImGuiRender();
 private:
     const uint m_MaxQuads;
     const uint m_MaxVertices;

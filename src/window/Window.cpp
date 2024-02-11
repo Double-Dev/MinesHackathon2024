@@ -11,11 +11,13 @@ Window::Window()
 
     if (!glfwInit())
         std::cout << "GLFW Error!" << std::endl;
-    m_Window = glfwCreateWindow(800, 600, "Particle Demo", NULL, NULL);
+    glfwWindowHint(GLFW_RESIZABLE, GLFW_FALSE);
+    m_Window = glfwCreateWindow(1200, 800, "Particle Demo", NULL, NULL);
     if (!m_Window)
         std::cout << "GLFW Error!" << std::endl;
     glfwMakeContextCurrent(m_Window);
     gladLoadGLLoader((GLADloadproc)glfwGetProcAddress);
+    glViewport(0, 0, 1200, 800);
 }
 
 Window::~Window()

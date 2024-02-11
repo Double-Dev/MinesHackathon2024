@@ -7,7 +7,7 @@
 #include <backends/imgui_impl_opengl3.cpp>
 #include <backends/imgui_impl_glfw.cpp>
 
-Renderer::Renderer() : m_MaxQuads(100), m_MaxVertices(m_MaxQuads * 4), m_MaxBytes(m_MaxQuads * 4 * sizeof(Vertex2D))
+Renderer::Renderer() : m_MaxQuads(1000000), m_MaxVertices(m_MaxQuads * 4), m_MaxBytes(m_MaxQuads * 4 * sizeof(Vertex2D))
 {
     // ImGui Initialization
     ImGui::CreateContext();
@@ -26,7 +26,7 @@ Renderer::Renderer() : m_MaxQuads(100), m_MaxVertices(m_MaxQuads * 4), m_MaxByte
         "void main()\n"
         "{\n"
         "   v_color = a_color;\n"
-        "   gl_Position = vec4(a_position, 1.0);\n"
+        "   gl_Position = vec4(a_position.x, a_position.y, a_position.z, 1.0);\n"
         "}\0";
     glShaderSource(vertexShader, 1, &vertexSource, NULL);
     glCompileShader(vertexShader);
@@ -104,13 +104,11 @@ Renderer::Renderer() : m_MaxQuads(100), m_MaxVertices(m_MaxQuads * 4), m_MaxByte
 
     glCreateBuffers(1, &m_Vbo);
     glBindBuffer(GL_ARRAY_BUFFER, m_Vbo);
-    glBufferData(GL_ARRAY_BUFFER, m_MaxBytes, m_Buffer, GL_DYNAMIC_DRAW);
+    glBufferData(GL_ARRAY_BUFFER, m_MaxBytes, nullptr, GL_DYNAMIC_DRAW);
     glEnableVertexAttribArray(0);
-    glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 3 * sizeof(float), (void*)0);
+    glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, sizeof(Vertex2D), (void*)0);
     glEnableVertexAttribArray(1);
-    glVertexAttribPointer(1, 4, GL_FLOAT, GL_FALSE, 4 * sizeof(float), (void*)(3 * sizeof(float)));
-
-    
+    glVertexAttribPointer(1, 4, GL_FLOAT, GL_FALSE, sizeof(Vertex2D), (void*)(3 * sizeof(float)));
 }
 
 Renderer::~Renderer()
@@ -149,7 +147,7 @@ void Renderer::DrawQuad(const Float3& position, const Float2& scale, const Float
 
 void Renderer::DrawQuad(const Float3& position, const float rotation, const Float2& scale, const Float4& color)
 {
-    DrawQuad(glm::translate(Mat4(1.0f), position) * glm::rotate(Mat4(1.0f), rotation, { 0.0f, 1.0f, 0.0f }) * glm::scale(Mat4(1.0f), { scale.x, scale.y, 0.0f }), color);
+    DrawQuad(glm::translate(Mat4(1.0f), position) * glm::rotate(Mat4(1.0f), rotation, { 0.0f, 0.0f, 1.0f }) * glm::scale(Mat4(1.0f), { scale.x, scale.y, 0.0f }), color);
 }
 
 void Renderer::DrawQuad(const Mat4& transform, const Float4& color)
@@ -174,21 +172,24 @@ void Renderer::Render()
 {
     // Batch Rendering
     glBindBuffer(GL_ARRAY_BUFFER, m_Vbo);
-    glBufferSubData(GL_ARRAY_BUFFER, 0, m_MaxBytes, m_Buffer);
-    m_BufferPtr = m_Buffer;
-    m_NumQuads = 0;
-
+    glBufferSubData(GL_ARRAY_BUFFER, 0, m_NumQuads * 4 * sizeof(Vertex2D), m_Buffer);
+    
     glUseProgram(m_Shader);
     glBindVertexArray(m_Vao);
-    glDrawElements(GL_TRIANGLES, m_NumQuads * 6, GL_UNSIGNED_INT, 0);
+    glDrawElements(GL_TRIANGLES, m_NumQuads * 6, GL_UNSIGNED_INT, nullptr);
+    m_BufferPtr = m_Buffer;
+    m_NumQuads = 0;
+}
 
-    // ImGui
+void Renderer::BeginImGuiRender()
+{
     ImGui_ImplOpenGL3_NewFrame();
     ImGui_ImplGlfw_NewFrame();
     ImGui::NewFrame();
+}
 
-    ImGui::ShowDemoWindow();
-
+void Renderer::EndImGuiRender()
+{
     ImGui::Render();
     ImGui_ImplOpenGL3_RenderDrawData(ImGui::GetDrawData());
 }

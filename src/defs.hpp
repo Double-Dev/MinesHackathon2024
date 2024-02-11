@@ -1,6 +1,7 @@
 #pragma once
 
 #include <glm/glm.hpp>
+#include <glm/gtc/random.hpp>
 #include <glm/ext.hpp>
 
 using Float2 = glm::vec2;
