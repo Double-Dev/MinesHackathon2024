@@ -6,13 +6,15 @@
 #include "renderer/ParticleSystem.hpp"
 
 int main() {
-    std::cout << "Hello World!" << std::endl;
+    uint numParticles;
+    std::cout << "Enter the Number of Particles to Simulate: ";
+    std::cin >> numParticles;
 
     Window window;
     Renderer renderer;
     renderer.SetClearColor({ 0.1f, 0.2f, 0.3f, 1.0f });
 
-    ParticleSystem pSys(10000, 0.1f);
+    ParticleSystem pSys(numParticles, 0.1f);
 
     double lastTime = glfwGetTime();
     float timer = 0.0f;
