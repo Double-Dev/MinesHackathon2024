@@ -6,6 +6,15 @@ ParticleSystem::ParticleSystem(const uint maxParticles, float spawnRadius)
     : m_MaxParticles(maxParticles), m_SpawnRadius(spawnRadius)
 {
     m_Particles = new Particle[m_MaxParticles];
+
+    m_MinLifeSpan = 0.5f;
+    m_MaxLifeSpan = 7.0f;
+
+    m_MinVel = 0.1f;
+    m_MaxVel = 0.2f;
+
+    m_MinSize = 0.001f;
+    m_MaxSize = 0.005f;
 }
 
 ParticleSystem::~ParticleSystem()
@@ -24,12 +33,12 @@ void ParticleSystem::Update(float delta)
         {
             float theta = glm::linearRand<float>(0.0f, 2.0f * glm::pi<float>());
             float radius = glm::linearRand<float>(0.0f, m_SpawnRadius);
-            float size = glm::linearRand<float>(0.001f, 0.005);
-            float velMag = glm::linearRand<float>(0.1f, 0.2f);
+            float size = glm::linearRand<float>(m_MinSize, m_MaxSize);
+            float velMag = glm::linearRand<float>(m_MinVel, m_MaxVel);
             float accMag = glm::linearRand<float>(0.05f, 0.1f);
             particle = Particle{
                 0.0f,
-                glm::linearRand<float>(0.5f, 7.0f),
+                glm::linearRand<float>(m_MinLifeSpan, m_MaxLifeSpan),
                 { m_Position.x + radius * glm::cos(theta), m_Position.y + radius * glm::sin(theta), 0.0f },
                 glm::linearRand<float>(0.0f, 2.0f * glm::pi<float>()),
                 { size, size },
@@ -43,7 +52,7 @@ void ParticleSystem::Update(float delta)
         else
         {
             // particle.Vel += particle.RAcc * delta;
-            particle.Vel += Float3{ 0.0, -0.98f, 0.0f } * delta;
+            // particle.Vel += Float3{ 0.0, -0.98f, 0.0f } * delta;
             particle.RVel += particle.RAcc * delta;
             particle.Position += particle.Vel * delta;
             particle.Rotation += particle.RVel * delta;
@@ -62,11 +71,33 @@ void ParticleSystem::Render(Renderer* renderer)
 
 void ParticleSystem::ImGuiRender()
 {
-    ImGui::ShowDemoWindow();
+    ImGui::SetNextWindowPos(ImVec2(0.0f, 0.0f));
+    ImGui::SetNextWindowSize(ImVec2(175.0f, 275.0f));
+    ImGui::Begin("Particle Settings", 0, ImGuiWindowFlags_NoResize);
 
-    ImGui::Begin("Settings");
+    // ImGui::SliderFloat2("Position", &m_Position[0], -1.0f, 1.0f);
+    ImGui::PushID("Lifespan");
+    ImGui::Text("Lifespan:");
+    ImGui::SliderFloat("Min", &m_MinLifeSpan, 0.1, m_MaxLifeSpan);
+    ImGui::SliderFloat("Max", &m_MaxLifeSpan, m_MinLifeSpan, 10.0f);
+    ImGui::PopID();
 
-    
+    ImGui::PushID("Generation Radius");
+    ImGui::Text("Generation Radius:");
+    ImGui::SliderFloat("", &m_SpawnRadius, 0.01, 1.0f);
+    ImGui::PopID();
+
+    ImGui::PushID("Particle Velocity");
+    ImGui::Text("Particle Velocity:");
+    ImGui::SliderFloat("Min", &m_MinVel, 0.1, m_MaxVel);
+    ImGui::SliderFloat("Max", &m_MaxVel, m_MinVel, 1.0f);
+    ImGui::PopID();
+
+    ImGui::PushID("Particle Size");
+    ImGui::Text("Particle Size:");
+    ImGui::SliderFloat("Min", &m_MinSize, 0.0001, m_MaxSize);
+    ImGui::SliderFloat("Max", &m_MaxSize, m_MinSize, 0.1f);
+    ImGui::PopID();
 
     ImGui::End();
 }

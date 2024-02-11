@@ -45,6 +45,6 @@ private:
     float m_MinVel;
     float m_MaxVel;
 
-    Float2 m_MinSize;
-    Float2 m_MaxSize;
+    float m_MinSize;
+    float m_MaxSize;
 };
